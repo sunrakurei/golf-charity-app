@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Email Notifications</title>
+
+<link rel="stylesheet"href="email.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<header>
+
+<div class="header-left">
+
+<h1>Email Notifications</h1>
+
+<p>
+
+Manage draw alerts, winner notifications and reminders.
+
+</p>
+
+</div>
+
+<button class="send-all-btn">
+
+Send All Notifications
+
+</button>
+
+</header>
+
+
+
+<!-- Statistics -->
+
+<section class="stats">
+
+<div class="stat-card">
+
+<i class="fa-solid fa-envelope"></i>
+
+<h2>250</h2>
+
+<p>Total Emails</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-paper-plane"></i>
+
+<h2>220</h2>
+
+<p>Sent</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-clock"></i>
+
+<h2>15</h2>
+
+<p>Pending</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h2>98%</h2>
+
+<p>Delivery Rate</p>
+
+</div>
+
+</section>
+
+
+
+<!-- Compose Email -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Compose Notification
+
+</h2>
+
+</div>
+
+<div class="form-container">
+
+<input type="email"
+id="emailTo"
+placeholder="Recipient Email">
+
+<input type="text"
+id="emailSubject"
+placeholder="Subject">
+
+<textarea
+id="emailMessage"
+placeholder="Message"></textarea>
+
+<button id="sendBtn">
+
+Send Email
+
+</button>
+
+</div>
+
+</section>
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Email Templates
+
+</h2>
+
+</div>
+
+<div class="card-container">
+
+<div class="info-card">
+
+<h3>
+
+Draw Result Alert
+
+</h3>
+
+<p>
+
+Notify users about draw results.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+Winner Notification
+
+</h3>
+
+<p>
+
+Congratulations email for winners.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+Subscription Reminder
+
+</h3>
+
+<p>
+
+Reminder before subscription expiry.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= EMAIL HISTORY ================= -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Email History
+
+</h2>
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Email</th>
+<th>Subject</th>
+<th>Status</th>
+<th>Date</th>
+
+</tr>
+
+</thead>
+
+<tbody id="emailTable">
+
+<tr>
+
+<td>john@gmail.com</td>
+<td>Winner Alert</td>
+<td>Delivered</td>
+<td>23 Jun 2026</td>
+
+</tr>
+
+<tr>
+
+<td>sarah@gmail.com</td>
+<td>Subscription Reminder</td>
+<td>Pending</td>
+<td>22 Jun 2026</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= RECENT ACTIVITIES ================= -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Recent Activities
+
+</h2>
+
+</div>
+
+<div class="activity-container">
+
+<div class="activity-card">
+
+📧 Winner email sent successfully.
+
+</div>
+
+<div class="activity-card">
+
+⏰ Subscription reminder delivered.
+
+</div>
+
+<div class="activity-card">
+
+🏆 Draw result notification published.
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= QUICK ACTIONS ================= -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Quick Actions
+
+</h2>
+
+</div>
+
+<div class="quick-actions">
+
+<button id="winnerBtn">
+
+Winner Alert
+
+</button>
+
+<button id="drawBtn">
+
+Draw Result Alert
+
+</button>
+
+<button id="subscriptionBtn">
+
+Subscription Reminder
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+<p>
+
+© 2026 CharityWin Email Notifications
+
+</p>
+
+</footer>
+
+</div>
+
+<script src="email.js"></script>
+
+</body>
+</html>

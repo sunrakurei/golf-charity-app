@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up | Golf4Charity</title>
+
+<link rel="stylesheet" href="signup.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+<div class="logo">Golf4Charity</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="charities.html">Charities</a></li>
+<li><a href="login.html">Login</a></li>
+</ul>
+</nav>
+
+<section class="signup-container">
+
+<!-- LEFT HERO -->
+<div class="left">
+
+<h1>Join Golf4Charity</h1>
+
+<p>Play. Contribute. Make an Impact.</p>
+
+<ul>
+<li>✔️ Monthly Prize Draws</li>
+<li>✔️ Support Verified Charities</li>
+<li>✔️ Track Contributions</li>
+<li>✔️ Win Rewards</li>
+</ul>
+
+<div class="trust">
+<p>🔒 Secure Registration</p>
+<p>❤️ Verified Charities</p>
+<p>🌍 Global Community</p>
+</div>
+
+</div>
+
+<!-- RIGHT FORM -->
+<div class="right">
+
+<form id="signupForm">
+
+<h2>Create Account</h2>
+
+<input type="text" id="name" placeholder="Full Name" required>
+
+<input type="email" id="email" placeholder="Email Address" required>
+
+<input type="password" id="password" placeholder="Password" required>
+
+<input type="password" id="confirmpassword" placeholder="Confirm Password" required>
+
+<select>
+<option>Select Subscription Plan</option>
+<option>Monthly Plan</option>
+<option>Yearly Plan (Save 20%)</option>
+</select>
+
+<select>
+<option>Choose Charity</option>
+<option>Education</option>
+<option>Healthcare</option>
+<option>Environment</option>
+<option>Water</option>
+<option>Food</option>
+</select>
+
+<label>Contribution %</label>
+
+<input type="range" min="10" max="25" value="15">
+
+<p id="rangeValue">15%</p>
+
+<label class="checkbox">
+<input type="checkbox" required>
+I agree to Terms & Conditions
+</label>
+
+<button type="submit">Create Account</button>
+
+</form>
+
+</div>
+
+</section>
+
+<script src="signup.js"></script>
+
+</body>
+</html>

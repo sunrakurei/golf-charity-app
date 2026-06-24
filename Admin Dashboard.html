@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard | CharityWin</title>
+
+<link rel="stylesheet" href="admin dashboard.css">
+<link rel="stylesheet" href="user management.css">
+<link rel="stylesheet" href="subscription management.css">
+<link rel="stylesheet" href="score management.css">
+<link rel="stylesheet" href="winner.css">
+<link rel="stylesheet" href="charity management.css">
+<link rel="stylesheet" href="reports.css">
+<link rel="stylesheet" href="notification.css">
+<link rel="stylesheet" href="setting.css">
+<link rel="stylesheet" href="logout.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+<div class="container">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<div class="logo">
+
+<h2>
+
+CharityWin Admin
+
+</h2>
+
+</div>
+
+<ul>
+
+<li class="active">
+<a href="admin-dashboard.html">
+<i class="fa-solid fa-house"></i>
+Dashboard
+</a>
+</li>
+
+<li>
+<a href="users management.html">
+<i class="fa-solid fa-users"></i>
+User Management
+</a>
+</li>
+
+<li>
+<a href="subscription management.html">
+<i class="fa-solid fa-crown"></i>
+Subscription Management
+</a>
+</li>
+
+<li>
+<a href="score management.html">
+<i class="fa-solid fa-chart-line"></i>
+Score Management
+</a>
+</li>
+
+<li>
+<a href="draw.html">
+<i class="fa-solid fa-ticket"></i>
+Draw Management
+</a>
+</li>
+
+<li>
+<a href="winner.html">
+<i class="fa-solid fa-trophy"></i>
+Winner Management
+</a>
+</li>
+
+<li>
+<a href="charity management.html">
+<i class="fa-solid fa-hand-holding-heart"></i>
+Charity Management
+</a>
+</li>
+
+<li>
+<a href="reports.html">
+<i class="fa-solid fa-chart-pie"></i>
+Reports & Analytics
+</a>
+</li>
+
+<li>
+<a href="notification.html">
+<i class="fa-solid fa-bell"></i>
+Notifications
+</a>
+</li>
+
+<li>
+<a href="setting.html">
+<i class="fa-solid fa-gear"></i>
+Settings
+</a>
+</li>
+
+<li>
+<a href="logout.html">
+<i class="fa-solid fa-right-from-bracket"></i>
+Logout
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+
+
+
+<!-- Main Content -->
+
+<div class="main-content">
+
+<header>
+
+<div class="header-left">
+
+<h1>
+
+Admin Dashboard
+
+</h1>
+
+<p>
+
+Manage users, draws, charities, subscriptions and analytics.
+
+</p>
+
+</div>
+
+
+
+<div class="header-right">
+
+<div class="search-box">
+
+<input type="text"
+
+placeholder="Search...">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+</div>
+
+<div class="notification-icon">
+
+<i class="fa-solid fa-bell"></i>
+
+</div>
+
+<div class="admin-profile">
+
+<img src="https://i.pravatar.cc/100" alt="">
+
+<div>
+
+<h3>
+
+Admin User
+
+</h3>
+
+<span>
+
+Super Admin
+
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+
+
+
+
+<!-- Statistics -->
+
+<section class="stats">
+
+<div class="stat-card">
+
+<i class="fa-solid fa-users"></i>
+
+<h2>
+
+12,540
+
+</h2>
+
+<p>
+
+Total Users
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-crown"></i>
+
+<h2>
+
+4,850
+
+</h2>
+
+<p>
+
+Subscribers
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-heart"></i>
+
+<h2>
+
+86
+
+</h2>
+
+<p>
+
+Active Charities
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-trophy"></i>
+
+<h2>
+
+220
+
+</h2>
+
+<p>
+
+Total Winners
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-ticket"></i>
+
+<h2>
+
+55
+
+</h2>
+
+<p>
+
+Active Draws
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-dollar-sign"></i>
+
+<h2>
+
+$48,500
+
+</h2>
+
+<p>
+
+Revenue
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-hand-holding-dollar"></i>
+
+<h2>
+
+$175,000
+
+</h2>
+
+<p>
+
+Donations Raised
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-clock"></i>
+
+<h2>
+
+34
+
+</h2>
+
+<p>
+
+Pending Requests
+
+</p>
+
+</div>
+
+</section>
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Quick Actions
+
+</h2>
+
+</div>
+
+<div class="quick-actions">
+
+<button>
+
+<i class="fa-solid fa-user-plus"></i>
+
+Add User
+
+</button>
+
+<button>
+
+<i class="fa-solid fa-ticket"></i>
+
+Create Draw
+
+</button>
+
+<button>
+
+<i class="fa-solid fa-heart"></i>
+
+Add Charity
+
+</button>
+
+<button>
+
+<i class="fa-solid fa-trophy"></i>
+
+Add Winner
+
+</button>
+
+<button>
+
+<i class="fa-solid fa-chart-column"></i>
+
+Generate Report
+
+</button>
+
+<button>
+
+<i class="fa-solid fa-bell"></i>
+
+Send Notification
+
+</button>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Recent Users -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Recent Users
+
+</h2>
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Name</th>
+
+<th>Email</th>
+
+<th>Membership</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>USR001</td>
+
+<td>Sarah Johnson</td>
+
+<td>sarah@example.com</td>
+
+<td>Gold</td>
+
+<td>Active</td>
+
+<td>
+
+<button>View</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>USR002</td>
+
+<td>David Lee</td>
+
+<td>david@example.com</td>
+
+<td>Silver</td>
+
+<td>Active</td>
+
+<td>
+
+<button>View</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>USR003</td>
+
+<td>Emma Brown</td>
+
+<td>emma@example.com</td>
+
+<td>Premium</td>
+
+<td>Pending</td>
+
+<td>
+
+<button>View</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Recent Winners -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Recent Winners
+
+</h2>
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Winner</th>
+
+<th>Prize</th>
+
+<th>Charity</th>
+
+<th>Date</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Sarah Johnson</td>
+
+<td>$5000</td>
+
+<td>Hope Foundation</td>
+
+<td>15 Jun 2026</td>
+
+</tr>
+
+<tr>
+
+<td>David Lee</td>
+
+<td>$3000</td>
+
+<td>Children Care</td>
+
+<td>10 Jun 2026</td>
+
+</tr>
+
+<tr>
+
+<td>Emma Brown</td>
+
+<td>$1000</td>
+
+<td>Health Support</td>
+
+<td>05 Jun 2026</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Recent Draws -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Recent Draws
+
+</h2>
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Draw ID</th>
+
+<th>Draw Name</th>
+
+<th>Date</th>
+
+<th>Participants</th>
+
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>DR001</td>
+
+<td>Summer Draw</td>
+
+<td>18 Jun 2026</td>
+
+<td>450</td>
+
+<td>Completed</td>
+
+</tr>
+
+<tr>
+
+<td>DR002</td>
+
+<td>Weekly Draw</td>
+
+<td>20 Jun 2026</td>
+
+<td>275</td>
+
+<td>Running</td>
+
+</tr>
+
+<tr>
+
+<td>DR003</td>
+
+<td>VIP Draw</td>
+
+<td>25 Jun 2026</td>
+
+<td>120</td>
+
+<td>Upcoming</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Latest Subscriptions -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Latest Subscriptions
+
+</h2>
+
+</div>
+
+<div class="subscription-cards">
+
+<div class="subscription-card">
+
+<h3>
+
+Gold Membership
+
+</h3>
+
+<p>
+
+1450 Active Members
+
+</p>
+
+</div>
+
+<div class="subscription-card">
+
+<h3>
+
+Silver Membership
+
+</h3>
+
+<p>
+
+2200 Active Members
+
+</p>
+
+</div>
+
+<div class="subscription-card">
+
+<h3>
+
+Premium Membership
+
+</h3>
+
+<p>
+
+850 Active Members
+
+</p>
+
+</div>
+
+<div class="subscription-card">
+
+<h3>
+
+Free Members
+
+</h3>
+
+<p>
+
+8040 Users
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Revenue Analytics
+
+</h2>
+
+</div>
+
+<div class="analytics-container">
+
+<div class="analytics-card">
+
+<h3>
+
+Monthly Revenue
+
+</h3>
+
+<h1>
+
+$48,500
+
+</h1>
+
+<span>
+
++18.4%</span>
+
+</div>
+
+<div class="analytics-card">
+
+<h3>
+
+Donations Collected
+
+</h3>
+
+<h1>
+
+$175,000
+
+</h1>
+
+<span>
+
++25.2%</span>
+
+</div>
+
+<div class="analytics-card">
+
+<h3>
+
+Subscription Revenue
+
+</h3>
+
+<h1>
+
+$96,300
+
+</h1>
+
+<span>
+
++14.8%</span>
+
+</div>
+
+<div class="analytics-card">
+
+<h3>
+
+Growth Rate
+
+</h3>
+
+<h1>
+
+32%</h1>
+
+<span>
+
+Excellent</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Charity Overview -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Charity Overview
+
+</h2>
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Charity Name</th>
+
+<th>Campaigns</th>
+
+<th>Total Donations</th>
+
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Hope Foundation</td>
+
+<td>18</td>
+
+<td>$35,000</td>
+
+<td>Active</td>
+
+</tr>
+
+<tr>
+
+<td>Children Care</td>
+
+<td>12</td>
+
+<td>$25,000</td>
+
+<td>Active</td>
+
+</tr>
+
+<tr>
+
+<td>Health Support</td>
+
+<td>10</td>
+
+<td>$19,000</td>
+
+<td>Pending</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Notifications -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Recent Notifications
+
+</h2>
+
+</div>
+
+<div class="notification-container">
+
+<div class="notification-card">
+
+🔔 New User Registered
+
+</div>
+
+<div class="notification-card">
+
+🏆 Winner Announced Successfully
+
+</div>
+
+<div class="notification-card">
+
+💳 Subscription Renewal Received
+
+</div>
+
+<div class="notification-card">
+
+❤️ Donation Successfully Added
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Activity Timeline -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Activity Timeline
+
+</h2>
+
+</div>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<span>
+
+09:00 AM
+
+</span>
+
+<p>
+
+New User Joined Platform
+
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<span>
+
+10:15 AM
+
+</span>
+
+<p>
+
+Weekly Draw Created
+
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<span>
+
+12:30 PM
+
+</span>
+
+<p>
+
+Winner Added Successfully
+
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<span>
+
+03:00 PM
+
+</span>
+
+<p>
+
+Donation Campaign Approved
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- System Status -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+System Status
+
+</h2>
+
+</div>
+
+<div class="system-container">
+
+<div class="system-card">
+
+<h3>
+
+Server Status
+
+</h3>
+
+<p>
+
+🟢 Online
+
+</p>
+
+</div>
+
+<div class="system-card">
+
+<h3>
+
+Database Status
+
+</h3>
+
+<p>
+
+🟢 Connected
+
+</p>
+
+</div>
+
+<div class="system-card">
+
+<h3>
+
+Payment Gateway
+
+</h3>
+
+<p>
+
+🟢 Active
+
+</p>
+
+</div>
+
+<div class="system-card">
+
+<h3>
+
+Email Service
+
+</h3>
+
+<p>
+
+🟢 Running
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Top Users
+
+</h2>
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Rank</th>
+
+<th>User</th>
+
+<th>Membership</th>
+
+<th>Score</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>#1</td>
+
+<td>Sarah Johnson</td>
+
+<td>Gold</td>
+
+<td>9850</td>
+
+</tr>
+
+<tr>
+
+<td>#2</td>
+
+<td>David Lee</td>
+
+<td>Premium</td>
+
+<td>9430</td>
+
+</tr>
+
+<tr>
+
+<td>#3</td>
+
+<td>Emma Brown</td>
+
+<td>Silver</td>
+
+<td>9150</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Top Charities -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Top Charities
+
+</h2>
+
+</div>
+
+<div class="analytics-container">
+
+<div class="analytics-card">
+
+<h3>
+
+Hope Foundation
+
+</h3>
+
+<p>
+
+$35,000 Raised
+
+</p>
+
+</div>
+
+<div class="analytics-card">
+
+<h3>
+
+Children Care
+
+</h3>
+
+<p>
+
+$25,000 Raised
+
+</p>
+
+</div>
+
+<div class="analytics-card">
+
+<h3>
+
+Health Support
+
+</h3>
+
+<p>
+
+$19,000 Raised
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Upcoming Draws -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Upcoming Draws
+
+</h2>
+
+</div>
+
+<div class="subscription-cards">
+
+<div class="subscription-card">
+
+<h3>
+
+Summer Mega Draw
+
+</h3>
+
+<p>
+
+25 June 2026
+
+</p>
+
+</div>
+
+<div class="subscription-card">
+
+<h3>
+
+VIP Draw
+
+</h3>
+
+<p>
+
+30 June 2026
+
+</p>
+
+</div>
+
+<div class="subscription-card">
+
+<h3>
+
+Weekly Lucky Draw
+
+</h3>
+
+<p>
+
+03 July 2026
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Pending Approvals -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Pending Approvals
+
+</h2>
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Request Type</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>REQ001</td>
+
+<td>New Charity</td>
+
+<td>Pending</td>
+
+<td>
+
+<button>
+
+Approve
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>REQ002</td>
+
+<td>Winner Verification</td>
+
+<td>Pending</td>
+
+<td>
+
+<button>
+
+Approve
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>REQ003</td>
+
+<td>User Upgrade</td>
+
+<td>Pending</td>
+
+<td>
+
+<button>
+
+Approve
+
+</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Admin Support -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Admin Support Center
+
+</h2>
+
+</div>
+
+<div class="analytics-card">
+
+<h3>
+
+24/7 System Support
+
+</h3>
+
+<p>
+
+Monitor platform activities, resolve issues and contact technical support anytime.
+
+</p>
+
+<button>
+
+Contact Support
+
+</button>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Footer -->
+
+<footer>
+
+<p>
+
+© 2026 CharityWin Admin Dashboard | All Rights Reserved
+
+</p>
+
+</footer>
+
+</div>
+
+</div>
+
+<script src="admin dashboard.js"></script>
+<script src="user management.js"></script>
+<script src="subscription management.js"></script>
+<script src="score management.js"></script>
+<script src="winner.js"></script>
+<script src="draw.js"></script>
+<script src="charity management.js"></script>
+<script src="report.js"></script>
+<script src="notification.js"></script>
+<script src="setting.js"></script>
+<script src="logout.js"></script>
+</body>
+
+</html>

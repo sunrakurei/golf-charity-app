@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Charities | Golf4Charity</title>
+
+<link rel="stylesheet" href="charity.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo">
+Golf4Charity
+</div>
+
+<ul>
+
+<li><a href="home.html">Home</a></li>
+
+<li><a href="work.html">How It Works</a></li>
+
+<li><a href="charity details.html">Charity Details</a></li>
+
+<li><a href="login.html">Login</a></li>
+
+<li><a href="charity management.html">Charity Management</a></li>
+
+<li><a href="Admin Dashboard.html">Admin Dashboard</a></li>
+
+<li><a href="error.html">Error handling and edge cases</a></li>
+
+</ul>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="charity-hero">
+
+<div class="hero-content">
+
+<h1>Support Causes That Matter</h1>
+
+<p>
+
+Every membership helps create real-world impact.
+
+Choose a charity and contribute towards education,
+
+healthcare, environmental protection, and community development.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- SEARCH -->
+
+<section class="search-section">
+
+<h2>Find Your Cause</h2>
+
+<input type="text"
+id="searchInput"
+placeholder="Search charities...">
+
+<div class="filters">
+
+<button>All</button>
+
+<button>Education</button>
+
+<button>Healthcare</button>
+
+<button>Environment</button>
+
+<button>Water</button>
+
+<button>Food</button>
+
+<button>Women</button>
+
+</div>
+
+</section>
+
+<!-- CHARITIES -->
+
+<section class="charity-grid">
+
+<!-- CARD 1 -->
+
+<div class="charity-card">
+
+<img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800">
+
+<div class="content">
+
+<span>Education</span>
+
+<h3>Future Scholars Foundation</h3>
+
+<p>
+
+Providing scholarships, books and
+
+digital learning opportunities.
+
+</p>
+
+<button onclick="showDetails('education')">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+
+<!-- CARD 2 -->
+
+<div class="charity-card">
+
+<img src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=800">
+
+<div class="content">
+
+<span>Healthcare</span>
+
+<h3>Healthy Lives Initiative</h3>
+
+<p>
+
+Supporting medical camps and
+
+healthcare accessibility.
+
+</p>
+
+<button onclick="showDetails('health')">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+
+<!-- CARD 3 -->
+
+<div class="charity-card">
+
+<img src="https://images.unsplash.com/photo-1492496913980-501348b61469?w=800">
+
+<div class="content">
+
+<span>Environment</span>
+
+<h3>Green Earth Mission</h3>
+
+<p>
+
+Tree plantation and environmental
+
+protection programs.
+
+</p>
+
+<button onclick="showDetails('environment')">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+
+<!-- CARD 4 -->
+
+<div class="charity-card">
+
+<img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?w=800">
+
+<div class="content">
+
+<span>Water</span>
+
+<h3>Clean Water Project</h3>
+
+<p>
+
+Providing safe drinking water
+
+to underserved communities.
+
+</p>
+
+<button onclick="showDetails('water')">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+
+<!-- CARD 5 -->
+
+<div class="charity-card">
+
+<img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800">
+
+<div class="content">
+
+<span>Women</span>
+
+<h3>Women Empowerment Network</h3>
+
+<p>
+
+Supporting women through education,
+
+skills and entrepreneurship.
+
+</p>
+
+<button onclick="showDetails('women')">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+
+<!-- CARD 6 -->
+
+<div class="charity-card">
+
+<img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800">
+
+<div class="content">
+
+<span>Food</span>
+
+<h3>Community Food Bank</h3>
+
+<p>
+
+Delivering meals and food supplies
+
+to families in need.
+
+</p>
+
+<button onclick="showDetails('food')">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- IMPACT -->
+
+<section class="impact-section">
+
+  <h2>Our Collective Impact</h2>
+
+  <p class="impact-intro">
+    Golf4Charity is a global movement powered by compassion, sportsmanship, and community action.
+    Every membership, donation, and golf event directly contributes to creating measurable social change.
+    Together, we are building a future where sports and charity go hand in hand.
+  </p>
+
+  <div class="impact-grid">
+
+    <div>
+      <h3>$1.5M+</h3>
+      <p>Total funds raised and transparently distributed to verified charitable organizations worldwide.</p>
+    </div>
+
+    <div>
+      <h3>200+</h3>
+      <p>Trusted NGO partners working across education, healthcare, environment, and social welfare.</p>
+    </div>
+
+    <div>
+      <h3>1,00,000+</h3>
+      <p>Lives positively impacted through scholarships, medical support, and community programs.</p>
+    </div>
+
+    <div>
+      <h3>40,000+</h3>
+      <p>Active members contributing monthly through events, memberships, and fundraising drives.</p>
+    </div>
+
+    <div>
+      <h3>15,000+</h3>
+      <p>Trees planted to support environmental restoration and fight climate change.</p>
+    </div>
+
+    <div>
+      <h3>10,000+</h3>
+      <p>Students supported with education resources, scholarships, and digital learning tools.</p>
+    </div>
+
+    <div>
+      <h3>25,000+</h3>
+      <p>Meals delivered to families facing food insecurity across multiple regions.</p>
+    </div>
+
+    <div>
+      <h3>500+</h3>
+      <p>Community events, charity tournaments, and awareness campaigns successfully conducted.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SUCCESS STORIES -->
+
+<section class="stories">
+
+<h2>Success Stories</h2>
+
+<div class="story-grid">
+
+<div class="story-card">
+
+<h3>500 Students Supported</h3>
+
+<p>
+
+Scholarships and digital education
+
+resources funded through donations.
+
+</p>
+
+</div>
+
+<div class="story-card">
+
+<h3>10,000 Trees Planted</h3>
+
+<p>
+
+Environmental restoration projects
+
+across multiple regions.
+
+</p>
+
+</div>
+
+<div class="story-card">
+
+<h3>25 Medical Camps</h3>
+
+<p>
+
+Providing healthcare access to
+
+remote communities.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- WHY SUPPORT -->
+
+<section class="why-section">
+
+<h2>Why Support Through Golf4Charity?</h2>
+
+<div class="why-grid">
+
+<div>
+
+<i class="fas fa-shield-alt"></i>
+
+<h3>Verified Organizations</h3>
+
+<p>
+
+Every charity undergoes a verification
+
+process before joining our platform.
+
+</p>
+
+</div>
+
+<div>
+
+<i class="fas fa-chart-line"></i>
+
+<h3>Transparent Reporting</h3>
+
+<p>
+
+Track donations and see exactly how
+
+funds are being utilized.
+
+</p>
+
+</div>
+
+<div>
+
+<i class="fas fa-hand-holding-heart"></i>
+
+<h3>Real Social Impact</h3>
+
+<p>
+
+Every contribution helps create
+
+measurable positive change.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+
+<h2>Start Making A Difference Today</h2>
+
+<p>
+
+Join thousands of golfers supporting
+
+meaningful causes around the world.
+
+</p>
+<button onclick="window.location.href='login.html'">
+  Become A Member
+</button>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+
+© 2026 Golf4Charity. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<!-- MODAL -->
+
+<div id="charityModal" class="modal">
+
+<div class="modal-content">
+
+<span class="close">&times;</span>
+
+<h2 id="modalTitle"></h2>
+
+<p id="modalDescription"></p>
+
+</div>
+
+</div>
+
+<script src="charity.js"></script>
+
+</body>
+
+</html>
+   

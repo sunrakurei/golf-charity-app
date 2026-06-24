@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>User Management | CharityWin</title>
+
+<link rel="stylesheet" href="user management.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<header>
+
+<div class="header-left">
+
+<h1>User Management</h1>
+
+<p>Manage all registered users and memberships.</p>
+
+</div>
+
+<button class="add-user-btn">
+
+<i class="fa-solid fa-user-plus"></i>
+
+Add User
+
+</button>
+
+</header>
+
+
+
+<section class="controls">
+
+<div class="search-box">
+
+<input type="text" placeholder="Search user...">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+</div>
+
+<select>
+
+<option>All Memberships</option>
+<option>Free</option>
+<option>Silver</option>
+<option>Gold</option>
+<option>Premium</option>
+
+</select>
+
+<select>
+
+<option>All Status</option>
+<option>Active</option>
+<option>Pending</option>
+<option>Blocked</option>
+
+</select>
+
+</section>
+
+
+
+<section class="stats">
+
+<div class="stat-card">
+
+<i class="fa-solid fa-users"></i>
+
+<h2>12,540</h2>
+
+<p>Total Users</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-user-check"></i>
+
+<h2>10,985</h2>
+
+<p>Active Users</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-user-clock"></i>
+
+<h2>275</h2>
+
+<p>Pending Users</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-user-slash"></i>
+
+<h2>58</h2>
+
+<p>Blocked Users</p>
+
+</div>
+
+</section>
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Registered Users
+
+</h2>
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>User</th>
+
+<th>Email</th>
+
+<th>Membership</th>
+
+<th>Status</th>
+
+<th>Score</th>
+
+<th>Actions</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>USR001</td>
+
+<td>Sarah Johnson</td>
+
+<td>sarah@example.com</td>
+
+<td><span class="gold">Gold</span></td>
+
+<td><span class="active-status">Active</span></td>
+
+<td>9850</td>
+
+<td>
+
+<button class="view-btn">
+
+View
+
+</button>
+
+<button class="edit-btn">
+
+Edit
+
+</button>
+
+<button class="delete-btn">
+
+Delete
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>USR002</td>
+
+<td>David Lee</td>
+
+<td>david@example.com</td>
+
+<td><span class="silver">Silver</span></td>
+
+<td><span class="pending-status">Pending</span></td>
+
+<td>8750</td>
+
+<td>
+
+<button class="view-btn">
+
+View
+
+</button>
+
+<button class="edit-btn">
+
+Edit
+
+</button>
+
+<button class="delete-btn">
+
+Delete
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>USR003</td>
+
+<td>Emma Brown</td>
+
+<td>emma@example.com</td>
+
+<td><span class="premium">Premium</span></td>
+
+<td><span class="blocked-status">Blocked</span></td>
+
+<td>9150</td>
+
+<td>
+
+<button class="view-btn">
+
+View
+
+</button>
+
+<button class="edit-btn">
+
+Edit
+
+</button>
+
+<button class="delete-btn">
+
+Delete
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>USR004</td>
+
+<td>Michael Smith</td>
+
+<td>michael@example.com</td>
+
+<td><span class="free">Free</span></td>
+
+<td><span class="active-status">Active</span></td>
+
+<td>6500</td>
+
+<td>
+
+<button class="view-btn">
+
+View
+
+</button>
+
+<button class="edit-btn">
+
+Edit</button>
+
+<button class="delete-btn">
+
+Delete
+
+</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Pagination -->
+
+<section class="pagination-section">
+
+<div class="pagination">
+
+<button>
+
+Previous
+
+</button>
+
+<button class="current-page">
+
+1
+
+</button>
+
+<button>
+
+2
+
+</button>
+
+<button>
+
+3
+
+</button>
+
+<button>
+
+Next
+
+</button>
+
+</div>
+
+</section>
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Recent Registrations
+
+</h2>
+
+</div>
+
+<div class="card-container">
+
+<div class="info-card">
+
+<h3>
+
+Sarah Johnson
+
+</h3>
+
+<p>
+
+Joined : 18 Jun 2026
+
+</p>
+
+<span>
+
+Gold Member
+
+</span>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+David Lee
+
+</h3>
+
+<p>
+
+Joined : 17 Jun 2026
+
+</p>
+
+<span>
+
+Silver Member
+
+</span>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+Emma Brown
+
+</h3>
+
+<p>
+
+Joined : 16 Jun 2026
+
+</p>
+
+<span>
+
+Premium Member
+
+</span>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+Michael Smith
+
+</h3>
+
+<p>
+
+Joined : 15 Jun 2026
+
+</p>
+
+<span>
+
+Free Member
+
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Top Users -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Top Users Leaderboard
+
+</h2>
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Rank</th>
+
+<th>Name</th>
+
+<th>Membership</th>
+
+<th>Score</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>#1</td>
+
+<td>Sarah Johnson</td>
+
+<td>Gold</td>
+
+<td>9850</td>
+
+</tr>
+
+<tr>
+
+<td>#2</td>
+
+<td>Emma Brown</td>
+
+<td>Premium</td>
+
+<td>9150</td>
+
+</tr>
+
+<tr>
+
+<td>#3</td>
+
+<td>David Lee</td>
+
+<td>Silver</td>
+
+<td>8750</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- User Activity Log -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+User Activity Log
+
+</h2>
+
+</div>
+
+<div class="activity-container">
+
+<div class="activity-card">
+
+✅ Sarah Johnson upgraded membership
+
+</div>
+
+<div class="activity-card">
+
+🏆 Emma Brown won weekly draw
+
+</div>
+
+<div class="activity-card">
+
+❤️ David Lee donated to Hope Foundation
+
+</div>
+
+<div class="activity-card">
+
+🎟️ Michael Smith joined VIP draw
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Login History -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Recent Login History
+
+</h2>
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>User</th>
+
+<th>Date</th>
+
+<th>Device</th>
+
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Sarah Johnson</td>
+
+<td>20 Jun 2026</td>
+
+<td>Chrome / Windows</td>
+
+<td>Success</td>
+
+</tr>
+
+<tr>
+
+<td>Emma Brown</td>
+
+<td>20 Jun 2026</td>
+
+<td>Safari / iPhone</td>
+
+<td>Success</td>
+
+</tr>
+
+<tr>
+
+<td>David Lee</td>
+
+<td>19 Jun 2026</td>
+
+<td>Android</td>
+
+<td>Success</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Verification Requests -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Verification Requests
+
+</h2>
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>User</th>
+
+<th>Request Type</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Emma Brown</td>
+
+<td>Email Verification</td>
+
+<td>Pending</td>
+
+<td>
+
+<button>
+
+Approve
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>David Lee</td>
+
+<td>ID Verification</td>
+
+<td>Pending</td>
+
+<td>
+
+<button>
+
+Approve
+
+</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Pending Account Requests
+
+</h2>
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>User</th>
+
+<th>Request</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>REQ001</td>
+
+<td>John Carter</td>
+
+<td>Membership Upgrade</td>
+
+<td>Pending</td>
+
+<td>
+
+<button>
+
+Approve
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>REQ002</td>
+
+<td>Emily White</td>
+
+<td>Account Reactivation</td>
+
+<td>Pending</td>
+
+<td>
+
+<button>
+
+Approve
+
+</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Membership Distribution -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Membership Distribution
+
+</h2>
+
+</div>
+
+<div class="card-container">
+
+<div class="info-card">
+
+<h3>
+
+Free Users
+
+</h3>
+
+<p>
+
+8040 Users
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+Silver Members
+
+</h3>
+
+<p>
+
+2200 Users
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+Gold Members
+
+</h3>
+
+<p>
+
+1450 Users
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+Premium Members
+
+</h3>
+
+<p>
+
+850 Users
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Banned Users -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Blocked Users
+
+</h2>
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>User</th>
+
+<th>Reason</th>
+
+<th>Date</th>
+
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Alex Green</td>
+
+<td>Violation</td>
+
+<td>12 Jun 2026</td>
+
+<td>Blocked</td>
+
+</tr>
+
+<tr>
+
+<td>Sophia Miller</td>
+
+<td>Spam Activity</td>
+
+<td>08 Jun 2026</td>
+
+<td>Blocked</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Support Requests -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+User Support Requests
+
+</h2>
+
+</div>
+
+<div class="activity-container">
+
+<div class="activity-card">
+
+📩 Sarah Johnson requested payment support.
+
+</div>
+
+<div class="activity-card">
+
+📩 Emma Brown requested account verification.
+
+</div>
+
+<div class="activity-card">
+
+📩 David Lee requested draw information.
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Footer -->
+
+<footer>
+
+<p>
+
+© 2026 CharityWin User Management | All Rights Reserved
+
+</p>
+
+</footer>
+
+</div>
+
+<script src="user management.js"></script>
+
+</body>
+
+</html>

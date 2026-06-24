@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Profile | CharityWin</title>
+
+<link rel="stylesheet" href="profile.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Header -->
+
+<header>
+
+<div class="header-left">
+
+<h1>
+
+My Profile
+
+</h1>
+
+<p>
+
+Manage your account information, winnings, charity contributions and settings.
+
+</p>
+
+</div>
+
+<div class="header-buttons">
+
+<button class="primary-btn">
+
+<i class="fa-solid fa-pen"></i>
+
+Edit Profile
+
+</button>
+
+<button class="secondary-btn">
+
+<i class="fa-solid fa-gear"></i>
+<a href="setting.html">
+Settings
+
+</a>
+
+</button>
+
+</div>
+
+</header>
+
+
+
+<!-- Profile Banner -->
+
+<section class="profile-banner">
+
+<div class="profile-image">
+
+<img src="data:image/jpeg;base64,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" alt="Profile">
+
+</div>
+
+<div class="profile-info">
+
+<h2>
+
+Sarah Johnson
+
+</h2>
+
+<p>
+
+Premium Member • United States
+
+</p>
+
+<div class="badges">
+
+<span>
+
+🏆 Top Winner
+
+</span>
+
+<span>
+
+❤️ Charity Supporter
+
+</span>
+
+<span>
+
+⭐ Premium Member
+
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- Quick Statistics -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Quick Statistics
+
+</h2>
+
+</div>
+
+<div class="stats">
+
+<div class="stat-card">
+
+<i class="fa-solid fa-trophy"></i>
+
+<h2>
+
+12
+
+</h2>
+
+<p>
+
+Total Wins
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-dollar-sign"></i>
+
+<h2>
+
+$85K
+
+</h2>
+
+<p>
+
+Prize Earned
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-heart"></i>
+
+<h2>
+
+$10K
+
+</h2>
+
+<p>
+
+Donated
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-ranking-star"></i>
+
+<h2>
+
+Gold
+
+</h2>
+
+<p>
+
+Membership
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Personal Information -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Personal Information
+
+</h2>
+
+</div>
+
+<div class="info-container">
+
+<div class="info-card">
+
+<h3>
+
+Full Name
+
+</h3>
+
+<p>
+
+Sarah Johnson
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+Email Address
+
+</h3>
+
+<p>
+
+sarah@example.com
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+Phone Number
+
+</h3>
+
+<p>
+
++1 9876543210
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+Country
+
+</h3>
+
+<p>
+
+United States
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Account Details
+
+</h2>
+
+</div>
+
+<div class="account-container">
+
+<div class="account-card">
+
+<i class="fa-solid fa-user"></i>
+
+<h3>
+
+Username
+
+</h3>
+
+<p>
+
+sarah_johnson25
+
+</p>
+
+</div>
+
+<div class="account-card">
+
+<i class="fa-solid fa-envelope"></i>
+
+<h3>
+
+Email Verification
+
+</h3>
+
+<p>
+
+Verified ✅
+
+</p>
+
+</div>
+
+<div class="account-card">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h3>
+
+Security Status
+
+</h3>
+
+<p>
+
+Protected
+
+</p>
+
+</div>
+
+<div class="account-card">
+
+<i class="fa-solid fa-calendar-days"></i>
+
+<h3>
+
+Joined On
+
+</h3>
+
+<p>
+
+January 2024
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Membership Information -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Membership Details
+
+</h2>
+
+</div>
+
+<div class="membership-card">
+
+<h3>
+
+Gold Membership
+
+</h3>
+
+<p>
+
+Enjoy premium rewards, priority support and exclusive draw access.
+
+</p>
+
+<div class="progress-bar">
+
+<div class="progress membership-progress">
+
+75%
+
+</div>
+
+</div>
+
+<p>
+
+Membership Progress : 75%
+
+</p>
+
+<button class="upgrade-btn">
+
+Upgrade Membership
+
+</button>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Winning History -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Winning History
+
+</h2>
+
+</div>
+
+<div class="history-container">
+
+<div class="history-card">
+
+<h3>
+
+Mega Draw Winner
+
+</h3>
+
+<p>
+
+Prize Amount : $50,000
+
+</p>
+
+<span>
+
+12 Aug 2025
+
+</span>
+
+</div>
+
+<div class="history-card">
+
+<h3>
+
+Monthly Draw Winner
+
+</h3>
+
+<p>
+
+Prize Amount : $20,000
+
+</p>
+
+<span>
+
+05 Jul 2025
+
+</span>
+
+</div>
+
+<div class="history-card">
+
+<h3>
+
+Weekly Draw Winner
+
+</h3>
+
+<p>
+
+Prize Amount : $5,000
+
+</p>
+
+<span>
+
+15 Jun 2025
+
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Donation History -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Donation History
+
+</h2>
+
+</div>
+
+<div class="history-container">
+
+<div class="history-card">
+
+<h3>
+
+UNICEF
+
+</h3>
+
+<p>
+
+Donated : $2,500
+
+</p>
+
+<span>
+
+10 Aug 2025</span>
+
+</div>
+
+<div class="history-card">
+
+<h3>
+
+Red Cross
+
+</h3>
+
+<p>
+
+Donated : $1,800
+
+</p>
+
+<span>
+
+05 Jul 2025</span>
+
+</div>
+
+<div class="history-card">
+
+<h3>
+
+WWF
+
+</h3>
+
+<p>
+
+Donated : $950
+
+</p>
+
+<span>
+
+01 Jun 2025</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Achievements -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Achievements
+
+</h2>
+
+</div>
+
+<div class="achievement-container">
+
+<div class="achievement-card">
+
+🏆
+
+<h3>
+
+Top Winner
+
+</h3>
+
+<p>
+
+Won 10+ Draws
+
+</p>
+
+</div>
+
+<div class="achievement-card">
+
+❤️
+
+<h3>
+
+Charity Hero
+
+</h3>
+
+<p>
+
+Donated Over $10K
+
+</p>
+
+</div>
+
+<div class="achievement-card">
+
+⭐
+
+<h3>
+
+Premium Member
+
+</h3>
+
+<p>
+
+Gold Membership Active
+
+</p>
+
+</div>
+
+<div class="achievement-card">
+
+🎁
+
+<h3>
+
+Reward Collector
+
+</h3>
+
+<p>
+
+Collected 50 Rewards
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="dashboard-section">
+
+<div class="section-title">
+<h2>Recent Activities</h2>
+</div>
+
+<div class="activity-container">
+
+<div class="activity-card">
+
+<i class="fa-solid fa-trophy"></i>
+
+<div>
+
+<h3>Mega Draw Won</h3>
+
+<p>You received $50,000 reward.</p>
+
+</div>
+
+<span>2 Days Ago</span>
+
+</div>
+
+<div class="activity-card">
+
+<i class="fa-solid fa-heart"></i>
+
+<div>
+
+<h3>Donation Completed</h3>
+
+<p>$2,500 donated to UNICEF.</p>
+
+</div>
+
+<span>5 Days Ago</span>
+
+</div>
+
+<div class="activity-card">
+
+<i class="fa-solid fa-star"></i>
+
+<div>
+
+<h3>Membership Upgraded</h3>
+
+<p>Gold Membership Activated.</p>
+
+</div>
+
+<span>1 Week Ago</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Security Settings -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+<h2>Security Settings</h2>
+</div>
+
+<div class="security-container">
+
+<div class="security-card">
+
+<h3>Password</h3>
+
+<p>Last changed 15 days ago.</p>
+
+<button>Change Password</button>
+
+</div>
+
+<div class="security-card">
+
+<h3>Two Factor Authentication</h3>
+
+<p>Extra protection for your account.</p>
+
+<button>Enable</button>
+
+</div>
+
+<div class="security-card">
+
+<h3>Login Devices</h3>
+
+<p>Manage trusted devices.</p>
+
+<button>View Devices</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Favorite Charities -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+<h2>Favorite Charities</h2>
+</div>
+
+<div class="favorite-container">
+
+<div class="favorite-card">
+
+<h3>UNICEF</h3>
+
+<p>Education & Child Welfare</p>
+
+</div>
+
+<div class="favorite-card">
+
+<h3>Red Cross</h3>
+
+<p>Disaster Relief</p>
+
+</div>
+
+<div class="favorite-card">
+
+<h3>WWF</h3>
+
+<p>Environment Protection</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Notifications -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+<h2>Notifications</h2>
+</div>
+
+<div class="notification-box">
+
+<div>
+
+<i class="fa-solid fa-bell"></i>
+
+Your prize has been processed successfully.
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-circle-check"></i>
+
+Gold Membership renewed successfully.
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-gift"></i>
+
+New reward offers are available.
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- FAQ -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+<h2>Frequently Asked Questions</h2>
+</div>
+
+<div class="faq-box">
+
+<div class="faq-item">
+
+<h3>How do I change my password?</h3>
+
+<p>You can update it from Security Settings.</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>How can I upgrade membership?</h3>
+
+<p>Click the Upgrade Membership button.</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>Can I edit my profile?</h3>
+
+<p>Yes, profile information can be updated anytime.</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Newsletter -->
+
+<section class="dashboard-section">
+
+<div class="newsletter">
+
+<h2>Stay Connected</h2>
+
+<p>
+
+Subscribe for latest updates and exclusive rewards.
+
+</p>
+
+<input type="email"
+placeholder="Enter your email">
+
+<button>
+
+Subscribe Now
+
+</button>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Footer -->
+
+<footer>
+
+<div class="footer-links">
+
+<a href="#">Home</a>
+<a href="#">Profile</a>
+<a href="#">Support</a>
+<a href="#">Privacy Policy</a>
+<a href="#">Contact</a>
+
+</div>
+
+<p>
+
+© 2026 CharityWin. All Rights Reserved.
+
+</p>
+
+</footer>
+
+</div>
+
+<script src="profile.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Error Handling & Edge Cases | CharityWin
+</title>
+
+<link rel="stylesheet"href="error.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+<div class="logo">
+
+CharityWin
+
+</div>
+
+<nav>
+
+<a href="dashboard.html">Dashboard</a>
+
+<a href="draw.html">Draws</a>
+
+<a href="#">Winners</a>
+
+<a href="#">Support</a>
+
+<button class="profile-btn">
+<a href="profile.html">
+My Profile
+
+</a>
+
+</button>
+
+</nav>
+
+</header>
+
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>
+
+Error Handling & Edge Cases
+
+</h1>
+
+<p>
+
+Robust monitoring and recovery mechanisms ensure reliability across payouts, subscriptions, verification and platform operations.
+
+</p>
+
+<div class="hero-status">
+
+System Monitoring Active
+
+</div>
+
+</section>
+
+
+
+<!-- OVERVIEW -->
+
+<section class="overview">
+
+<h2>
+
+Overview
+
+</h2>
+
+<p class="section-desc">
+
+Track critical failures and maintain platform stability.
+
+</p>
+
+<div class="overview-container">
+
+<div class="overview-card">
+
+<i class="fa-solid fa-triangle-exclamation"></i>
+
+<h3>
+
+Critical Errors
+
+</h3>
+
+<h1>
+
+15
+
+</h1>
+
+</div>
+
+
+
+<div class="overview-card">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h3>
+
+Resolved Issues
+
+</h3>
+
+<h1>
+
+184
+
+</h1>
+
+</div>
+
+
+
+<div class="overview-card">
+
+<i class="fa-solid fa-clock"></i>
+
+<h3>
+
+Pending Reviews
+
+</h3>
+
+<h1>
+
+8
+
+</h1>
+
+</div>
+
+
+
+<div class="overview-card">
+
+<i class="fa-solid fa-server"></i>
+
+<h3>
+
+API Incidents
+
+</h3>
+
+<h1>
+
+4
+
+</h1>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ERROR SUMMARY -->
+
+<section class="summary">
+
+<h2>
+
+Error Summary
+
+</h2>
+
+<p class="section-desc">
+
+Common system failures and exceptions.
+
+</p>
+
+<div class="summary-container">
+
+<div class="summary-card">
+
+<i class="fa-solid fa-wifi"></i>
+
+<h3>
+
+Network Errors
+
+</h3>
+
+<p>
+
+Internet interruptions and request failures.
+
+</p>
+
+</div>
+
+
+
+<div class="summary-card">
+
+<i class="fa-solid fa-credit-card"></i>
+
+<h3>
+
+Payment Errors
+
+</h3>
+
+<p>
+
+Transaction decline and processing failures.
+
+</p>
+
+</div>
+
+
+
+<div class="summary-card">
+
+<i class="fa-solid fa-user-lock"></i>
+
+<h3>
+
+Authentication Errors
+
+</h3>
+
+<p>
+
+Session expiration and access denial.
+
+</p>
+
+</div>
+
+
+
+<div class="summary-card">
+
+<i class="fa-solid fa-database"></i>
+
+<h3>
+
+Database Errors
+
+</h3>
+
+<p>
+
+Storage and retrieval issues.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- COMMON ERROR TYPES -->
+
+<section class="error-types">
+
+<h2>
+
+Common Error Types
+
+</h2>
+
+<p class="section-desc">
+
+Frequently encountered edge cases.
+
+</p>
+
+<div class="error-container">
+
+<div class="error-card">
+
+<i class="fa-solid fa-clock"></i>
+
+<h3>
+
+Request Timeout
+
+</h3>
+
+<p>
+
+Server response exceeded maximum limit.
+
+</p>
+
+</div>
+
+
+
+<div class="error-card">
+
+<i class="fa-solid fa-ban"></i>
+
+<h3>
+
+Unauthorized Access
+
+</h3>
+
+<p>
+
+Authentication failed.
+
+</p>
+
+</div>
+
+
+
+<div class="error-card">
+
+<i class="fa-solid fa-file-circle-xmark"></i>
+
+<h3>
+
+Missing Documents
+
+</h3>
+
+<p>
+
+Required files unavailable.
+
+</p>
+
+</div>
+
+
+
+<div class="error-card">
+
+<i class="fa-solid fa-building-columns"></i>
+
+<h3>
+
+Invalid Bank Details
+
+</h3>
+
+<p>
+
+Incorrect payout account information.
+
+</p>
+
+</div>
+
+
+
+<div class="error-card">
+
+<i class="fa-solid fa-circle-xmark"></i>
+
+<h3>
+
+Failed Payout
+
+</h3>
+
+<p>
+
+Payment transfer rejected.
+
+</p>
+
+</div>
+
+
+
+<div class="error-card">
+
+<i class="fa-solid fa-bug"></i>
+
+<h3>
+
+Unexpected Exception
+
+</h3>
+
+<p>
+
+Unhandled application error.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="api-errors">
+
+<h2>
+
+API Errors
+
+</h2>
+
+<p class="section-desc">
+
+Failures occurring during server communication.
+
+</p>
+
+<div class="api-container">
+
+<div class="api-card">
+
+<i class="fa-solid fa-server"></i>
+
+<h3>
+
+500 Internal Server Error
+
+</h3>
+
+<p>
+
+Unexpected server exception.
+
+</p>
+
+</div>
+
+
+
+<div class="api-card">
+
+<i class="fa-solid fa-link-slash"></i>
+
+<h3>
+
+404 Endpoint Not Found
+
+</h3>
+
+<p>
+
+Requested resource unavailable.
+
+</p>
+
+</div>
+
+
+
+<div class="api-card">
+
+<i class="fa-solid fa-hourglass-half"></i>
+
+<h3>
+
+Request Timeout
+
+</h3>
+
+<p>
+
+API response delayed.
+
+</p>
+
+</div>
+
+
+
+<div class="api-card">
+
+<i class="fa-solid fa-lock"></i>
+
+<h3>
+
+401 Unauthorized
+
+</h3>
+
+<p>
+
+Authentication token expired.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- PAYMENT ERRORS -->
+
+<section class="payment-errors">
+
+<h2>
+
+Payment Errors
+
+</h2>
+
+<p class="section-desc">
+
+Issues related to payment processing.
+
+</p>
+
+<div class="payment-container">
+
+<div class="payment-card">
+
+<i class="fa-solid fa-credit-card"></i>
+
+<h3>
+
+Card Declined
+
+</h3>
+
+<p>
+
+Transaction rejected by issuer.
+
+</p>
+
+</div>
+
+
+
+<div class="payment-card">
+
+<i class="fa-solid fa-building-columns"></i>
+
+<h3>
+
+Invalid Bank Account
+
+</h3>
+
+<p>
+
+Incorrect account information.
+
+</p>
+
+</div>
+
+
+
+<div class="payment-card">
+
+<i class="fa-solid fa-money-bill-wave"></i>
+
+<h3>
+
+Insufficient Funds
+
+</h3>
+
+<p>
+
+Balance unavailable.
+
+</p>
+
+</div>
+
+
+
+<div class="payment-card">
+
+<i class="fa-solid fa-circle-xmark"></i>
+
+<h3>
+
+Failed Payout
+
+</h3>
+
+<p>
+
+Transfer unsuccessful.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- VALIDATION ERRORS -->
+
+<section class="validation-errors">
+
+<h2>
+
+Validation Errors
+
+</h2>
+
+<p class="section-desc">
+
+Incorrect or missing user information.
+
+</p>
+
+<div class="validation-container">
+
+<div class="validation-card">
+
+<i class="fa-solid fa-envelope"></i>
+
+<h3>
+
+Invalid Email
+
+</h3>
+
+<p>
+
+Email format incorrect.
+
+</p>
+
+</div>
+
+
+
+<div class="validation-card">
+
+<i class="fa-solid fa-phone"></i>
+
+<h3>
+
+Invalid Phone Number
+
+</h3>
+
+<p>
+
+Phone format invalid.
+
+</p>
+
+</div>
+
+
+
+<div class="validation-card">
+
+<i class="fa-solid fa-file-circle-xmark"></i>
+
+<h3>
+
+Missing Documents
+
+</h3>
+
+<p>
+
+Verification documents absent.
+
+</p>
+
+</div>
+
+
+
+<div class="validation-card">
+
+<i class="fa-solid fa-user-lock"></i>
+
+<h3>
+
+Identity Verification Failed
+
+</h3>
+
+<p>
+
+KYC verification unsuccessful.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- NETWORK FAILURES -->
+
+<section class="network-errors">
+
+<h2>
+
+Network Failures
+
+</h2>
+
+<p class="section-desc">
+
+Connectivity issues and interruptions.
+
+</p>
+
+<div class="network-container">
+
+<div class="network-card">
+
+<i class="fa-solid fa-wifi"></i>
+
+<h3>
+
+No Internet Connection
+
+</h3>
+
+<p>
+
+Unable to reach server.
+
+</p>
+
+</div>
+
+
+
+<div class="network-card">
+
+<i class="fa-solid fa-rotate"></i>
+
+<h3>
+
+Retry Failed
+
+</h3>
+
+<p>
+
+Multiple attempts unsuccessful.
+
+</p>
+
+</div>
+
+
+
+<div class="network-card">
+
+<i class="fa-solid fa-cloud-bolt"></i>
+
+<h3>
+
+Gateway Failure
+
+</h3>
+
+<p>
+
+External service unavailable.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- SUBSCRIPTION ERRORS -->
+
+<section class="subscription-errors">
+
+<h2>
+
+Subscription Errors
+
+</h2>
+
+<p class="section-desc">
+
+Problems occurring during plan purchase.
+
+</p>
+
+<div class="subscription-container">
+
+<div class="subscription-card">
+
+<i class="fa-solid fa-xmark"></i>
+
+<h3>
+
+Payment Failed
+
+</h3>
+
+<p>
+
+Subscription purchase failed.
+
+</p>
+
+</div>
+
+
+
+<div class="subscription-card">
+
+<i class="fa-solid fa-arrows-rotate"></i>
+
+<h3>
+
+Renewal Failed
+
+</h3>
+
+<p>
+
+Auto-renew unsuccessful.
+
+</p>
+
+</div>
+
+
+
+<div class="subscription-card">
+
+<i class="fa-solid fa-ban"></i>
+
+<h3>
+
+Plan Expired
+
+</h3>
+
+<p>
+
+Access unavailable.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- RECOVERY ACTIONS -->
+
+<section class="recovery">
+
+<h2>
+
+Recovery Actions
+
+</h2>
+
+<p class="section-desc">
+
+Automatic and manual recovery methods.
+
+</p>
+
+<div class="recovery-container">
+
+<div class="recovery-card">
+
+<i class="fa-solid fa-rotate"></i>
+
+<h3>
+
+Retry Request
+
+</h3>
+
+</div>
+
+<div class="recovery-card">
+
+<i class="fa-solid fa-upload"></i>
+
+<h3>
+
+Re-upload Documents
+
+</h3>
+
+</div>
+
+<div class="recovery-card">
+
+<i class="fa-solid fa-headset"></i>
+
+<h3>
+
+Contact Support
+
+</h3>
+
+</div>
+
+<div class="recovery-card">
+
+<i class="fa-solid fa-shield"></i>
+
+<h3>
+
+Security Verification
+
+</h3>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- MONITORING SYSTEM -->
+
+<section class="monitoring">
+
+<h2>
+
+Monitoring System
+
+</h2>
+
+<p class="section-desc">
+
+Real-time monitoring of platform failures and recovery status.
+
+</p>
+
+<div class="monitoring-container">
+
+<div class="monitoring-card">
+
+<i class="fa-solid fa-heart-pulse"></i>
+
+<h3>
+
+System Health
+
+</h3>
+
+<p>
+
+Operational
+
+</p>
+
+</div>
+
+<div class="monitoring-card">
+
+<i class="fa-solid fa-server"></i>
+
+<h3>
+
+API Status
+
+</h3>
+
+<p>
+
+Stable
+
+</p>
+
+</div>
+
+<div class="monitoring-card">
+
+<i class="fa-solid fa-database"></i>
+
+<h3>
+
+Database Status
+
+</h3>
+
+<p>
+
+Online
+
+</p>
+
+</div>
+
+<div class="monitoring-card">
+
+<i class="fa-solid fa-cloud"></i>
+
+<h3>
+
+Cloud Services
+
+</h3>
+
+<p>
+
+Connected
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- RETRY MECHANISMS -->
+
+<section class="retry">
+
+<h2>
+
+Retry Mechanisms
+
+</h2>
+
+<p class="section-desc">
+
+Automatic recovery procedures.
+
+</p>
+
+<div class="retry-container">
+
+<div class="retry-card">
+
+<i class="fa-solid fa-rotate"></i>
+
+<h3>
+
+API Retry
+
+</h3>
+
+<p>
+
+Reconnect failed requests.
+
+</p>
+
+</div>
+
+<div class="retry-card">
+
+<i class="fa-solid fa-arrow-rotate-right"></i>
+
+<h3>
+
+Payment Retry
+
+</h3>
+
+<p>
+
+Restart payment flow.
+
+</p>
+
+</div>
+
+<div class="retry-card">
+
+<i class="fa-solid fa-upload"></i>
+
+<h3>
+
+Document Reupload
+
+</h3>
+
+<p>
+
+Resubmit verification files.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- INCIDENT LOGS -->
+
+<section class="incident-logs">
+
+<h2>
+
+Incident Logs
+
+</h2>
+
+<p class="section-desc">
+
+Recent platform incidents.
+
+</p>
+
+<div class="log-table">
+
+<table>
+
+<tr>
+
+<th>Date</th>
+<th>Incident</th>
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>12 Jul 2025</td>
+<td>Payment Failure</td>
+<td>Resolved</td>
+
+</tr>
+
+<tr>
+
+<td>13 Jul 2025</td>
+<td>API Timeout</td>
+<td>Resolved</td>
+
+</tr>
+
+<tr>
+
+<td>14 Jul 2025</td>
+<td>Database Delay</td>
+<td>Monitoring</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+<!-- SYSTEM STATUS -->
+
+<section class="system-status">
+
+<h2>
+
+System Status
+
+</h2>
+
+<p class="section-desc">
+
+Current operational status.
+
+</p>
+
+<div class="status-container">
+
+<div class="status-card">
+
+<h3>
+
+API Services
+
+</h3>
+
+<p>
+
+Operational
+
+</p>
+
+</div>
+
+<div class="status-card">
+
+<h3>
+
+Payments
+
+</h3>
+
+<p>
+
+Operational
+
+</p>
+
+</div>
+
+<div class="status-card">
+
+<h3>
+
+Notifications
+
+</h3>
+
+<p>
+
+Operational
+
+</p>
+
+</div>
+
+<div class="status-card">
+
+<h3>
+
+Verification
+
+</h3>
+
+<p>
+
+Operational
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FAQ -->
+
+<section class="faq">
+
+<h2>
+
+Frequently Asked Questions
+
+</h2>
+
+<div class="faq-box">
+
+<h3>
+
+How are errors handled?
+
+</h3>
+
+<p>
+
+Automatic retries and manual recovery actions are used.
+
+</p>
+
+</div>
+
+<div class="faq-box">
+
+<h3>
+
+Can failed payments be recovered?
+
+</h3>
+
+<p>
+
+Yes, after verification and retry procedures.
+
+</p>
+
+</div>
+
+<div class="faq-box">
+
+<h3>
+
+Who should I contact?
+
+</h3>
+
+<p>
+
+Support team is available 24/7.
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- SUPPORT -->
+
+<section class="support">
+
+<h2>
+
+Support Center
+
+</h2>
+
+<p class="section-desc">
+
+Get assistance whenever needed.
+
+</p>
+
+<div class="support-container">
+
+<div class="support-card">
+
+<i class="fa-solid fa-envelope"></i>
+
+<h3>
+
+Email Support
+
+</h3>
+
+<p>
+
+support@charitywin.com
+
+</p>
+
+</div>
+
+<div class="support-card">
+
+<i class="fa-solid fa-phone"></i>
+
+<h3>
+
+Phone Support
+
+</h3>
+
+<p>
+
++1 800 456 7890
+
+</p>
+
+</div>
+
+<div class="support-card">
+
+<i class="fa-solid fa-headset"></i>
+
+<h3>
+
+Live Chat
+
+</h3>
+
+<p>
+
+24/7 Available
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-top">
+
+<div>
+
+<h3>
+
+CharityWin
+
+</h3>
+
+<p>
+
+Reliable systems with proactive error recovery.
+
+</p>
+
+</div>
+
+<div>
+
+<h4>
+
+Quick Links</h4>
+
+<a href="#">Dashboard</a>
+<a href="#">Support</a>
+<a href="#">Privacy Policy</a>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="copyright">
+
+© 2026 CharityWin. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script src="error.js"></script>
+</body>
+</html>

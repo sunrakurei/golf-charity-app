@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Winner Management | CharityWin</title>
+
+<link rel="stylesheet" href="winner.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<!-- Header -->
+
+<header>
+
+<div class="header-left">
+
+<h1>Winner Management</h1>
+
+<p>
+Manage winners, verification requests and payouts.
+</p>
+
+</div>
+
+
+<div class="header-buttons">
+
+
+<a href="email.html">
+<button class="add-winner-btn">
+
+<i class="fa-solid fa-envelope"></i>
+
+Email Notification
+
+</button>
+</a>
+
+
+
+<a href="payout.html">
+<button class="add-winner-btn">
+
+<i class="fa-solid fa-money-bill"></i>
+
+Payout
+
+</button>
+</a>
+
+
+
+<a href="winner verfication.html">
+<button class="add-winner-btn">
+
+<i class="fa-solid fa-user-check"></i>
+
+Winner Verification
+
+</button>
+</a>
+
+
+
+<button class="add-winner-btn">
+
+<i class="fa-solid fa-trophy"></i>
+
+Add Winner
+
+</button>
+
+
+</div>
+
+</header>
+
+
+
+<!-- Search & Filters -->
+
+<section class="controls">
+
+<div class="search-box">
+
+<input type="text"
+placeholder="Search winner...">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+</div>
+
+<select>
+
+<option>All Draws</option>
+
+<option>Weekly Draw</option>
+
+<option>VIP Draw</option>
+
+<option>Mega Draw</option>
+
+</select>
+
+<select>
+
+<option>All Status</option>
+
+<option>Verified</option>
+
+<option>Pending</option>
+
+<option>Rejected</option>
+
+<option>Paid</option>
+
+</select>
+
+</section>
+
+
+
+<!-- Statistics -->
+
+<section class="stats">
+
+<div class="stat-card">
+
+<i class="fa-solid fa-trophy"></i>
+
+<h2>220</h2>
+
+<p>Total Winners</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h2>190</h2>
+
+<p>Verified Winners</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-clock"></i>
+
+<h2>18</h2>
+
+<p>Pending Verification</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-money-check-dollar"></i>
+
+<h2>175</h2>
+
+<p>Payout Completed</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-hourglass-half"></i>
+
+<h2>12</h2>
+
+<p>Pending Payments</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-ban"></i>
+
+<h2>8</h2>
+
+<p>Rejected Winners</p>
+
+</div>
+
+</section>
+
+
+
+<!-- Quick Actions -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Quick Actions
+
+</h2>
+
+</div>
+
+<div class="quick-actions">
+
+<button>
+
+<i class="fa-solid fa-user-plus"></i>
+
+Add Winner
+
+</button>
+
+<button>
+
+<i class="fa-solid fa-circle-check"></i>
+
+Approve Winner
+
+</button>
+
+<button>
+
+<i class="fa-solid fa-xmark"></i>
+
+Reject Winner
+
+</button>
+
+<button>
+
+<i class="fa-solid fa-money-check"></i>
+
+Mark Payout
+
+</button>
+
+<button>
+
+<i class="fa-solid fa-download"></i>
+
+Export Winners
+
+</button>
+
+<button>
+
+<i class="fa-solid fa-envelope"></i>
+
+Send Notification
+
+</button>
+
+</div>
+
+</section>
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Winners List
+
+</h2>
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Winner Name</th>
+
+<th>Draw</th>
+
+<th>Prize</th>
+
+<th>Charity</th>
+
+<th>Verification</th>
+
+<th>Payment</th>
+
+<th>Date</th>
+
+<th>Actions</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>WIN001</td>
+
+<td>Sarah Johnson</td>
+
+<td>Weekly Draw</td>
+
+<td>$5,000</td>
+
+<td>Hope Foundation</td>
+
+<td>
+
+<span class="verified">
+
+Verified
+
+</span>
+
+</td>
+
+<td>
+
+<span class="paid">
+
+Paid
+
+</span>
+
+</td>
+
+<td>20 Jun 2026</td>
+
+<td>
+
+<button class="view-btn">
+
+View
+
+</button>
+
+<button class="approve-btn">
+
+Approve
+
+</button>
+
+<button class="paid-btn">
+
+Mark Paid
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>WIN002</td>
+
+<td>David Lee</td>
+
+<td>VIP Draw</td>
+
+<td>$10,000</td>
+
+<td>Children Care</td>
+
+<td>
+
+<span class="pending">
+
+Pending
+
+</span>
+
+</td>
+
+<td>
+
+<span class="unpaid">
+
+Unpaid
+
+</span>
+
+</td>
+
+<td>18 Jun 2026</td>
+
+<td>
+
+<button class="view-btn">
+
+View
+
+</button>
+
+<button class="approve-btn">
+
+Approve
+
+</button>
+
+<button class="reject-btn">
+
+Reject
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>WIN003</td>
+
+<td>Emma Brown</td>
+
+<td>Mega Draw</td>
+
+<td>$25,000</td>
+
+<td>Health Support</td>
+
+<td>
+
+<span class="verified">
+
+Verified
+
+</span>
+
+</td>
+
+<td>
+
+<span class="paid">
+
+Paid
+
+</span>
+
+</td>
+
+<td>15 Jun 2026</td>
+
+<td>
+
+<button class="view-btn">
+
+View
+
+</button>
+
+<button class="paid-btn">
+
+Mark Paid
+
+</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Recent Winners -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Recent Winners
+
+</h2>
+
+</div>
+
+<div class="card-container">
+
+<div class="info-card">
+
+<h3>
+
+Sarah Johnson
+
+</h3>
+
+<p>
+
+Won Weekly Draw
+
+</p>
+
+<span>
+
+$5,000 Prize
+
+</span>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+David Lee
+
+</h3>
+
+<p>
+
+Won VIP Draw
+
+</p>
+
+<span>
+
+$10,000 Prize
+
+</span>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+Emma Brown
+
+</h3>
+
+<p>
+
+Won Mega Draw
+
+</p>
+
+<span>
+
+$25,000 Prize
+
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Pagination -->
+
+<section class="pagination-section">
+
+<div class="pagination">
+
+<button>
+
+Previous
+
+</button>
+
+<button class="current-page">
+
+1
+
+</button>
+
+<button>
+
+2
+
+</button>
+
+<button>
+
+3
+
+</button>
+
+<button>
+
+Next
+
+</button>
+
+</div>
+
+</section>
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Winners List
+
+</h2>
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Winner Name</th>
+
+<th>Draw</th>
+
+<th>Prize</th>
+
+<th>Charity</th>
+
+<th>Verification</th>
+
+<th>Payment</th>
+
+<th>Date</th>
+
+<th>Actions</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>WIN001</td>
+
+<td>Sarah Johnson</td>
+
+<td>Weekly Draw</td>
+
+<td>$5,000</td>
+
+<td>Hope Foundation</td>
+
+<td>
+
+<span class="verified">
+
+Verified
+
+</span>
+
+</td>
+
+<td>
+
+<span class="paid">
+
+Paid
+
+</span>
+
+</td>
+
+<td>20 Jun 2026</td>
+
+<td>
+
+<button class="view-btn">
+
+View
+
+</button>
+
+<button class="approve-btn">
+
+Approve
+
+</button>
+
+<button class="paid-btn">
+
+Mark Paid
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>WIN002</td>
+
+<td>David Lee</td>
+
+<td>VIP Draw</td>
+
+<td>$10,000</td>
+
+<td>Children Care</td>
+
+<td>
+
+<span class="pending">
+
+Pending
+
+</span>
+
+</td>
+
+<td>
+
+<span class="unpaid">
+
+Unpaid
+
+</span>
+
+</td>
+
+<td>18 Jun 2026</td>
+
+<td>
+
+<button class="view-btn">
+
+View
+
+</button>
+
+<button class="approve-btn">
+
+Approve
+
+</button>
+
+<button class="reject-btn">
+
+Reject
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>WIN003</td>
+
+<td>Emma Brown</td>
+
+<td>Mega Draw</td>
+
+<td>$25,000</td>
+
+<td>Health Support</td>
+
+<td>
+
+<span class="verified">
+
+Verified
+
+</span>
+
+</td>
+
+<td>
+
+<span class="paid">
+
+Paid
+
+</span>
+
+</td>
+
+<td>15 Jun 2026</td>
+
+<td>
+
+<button class="view-btn">
+
+View
+
+</button>
+
+<button class="paid-btn">
+
+Mark Paid
+
+</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Recent Winners -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Recent Winners
+
+</h2>
+
+</div>
+
+<div class="card-container">
+
+<div class="info-card">
+
+<h3>
+
+Sarah Johnson
+
+</h3>
+
+<p>
+
+Won Weekly Draw
+
+</p>
+
+<span>
+
+$5,000 Prize
+
+</span>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+David Lee
+
+</h3>
+
+<p>
+
+Won VIP Draw
+
+</p>
+
+<span>
+
+$10,000 Prize
+
+</span>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+Emma Brown
+
+</h3>
+
+<p>
+
+Won Mega Draw
+
+</p>
+
+<span>
+
+$25,000 Prize
+
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Pagination -->
+
+<section class="pagination-section">
+
+<div class="pagination">
+
+<button>
+
+Previous
+
+</button>
+
+<button class="current-page">
+
+1
+
+</button>
+
+<button>
+
+2
+
+</button>
+
+<button>
+
+3
+
+</button>
+
+<button>
+
+Next
+
+</button>
+
+</div>
+
+</section>
+<!-- Verification Requests -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+<h2>Winner Verification Requests</h2>
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+<th>ID</th>
+<th>Winner</th>
+<th>Document</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>VR001</td>
+<td>David Lee</td>
+<td>ID Proof</td>
+<td>Pending</td>
+<td>
+
+<button class="approve-btn">
+
+Approve
+
+</button>
+
+<button class="reject-btn">
+
+Reject
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>VR002</td>
+
+<td>Alex Carter</td>
+
+<td>Bank Details</td>
+
+<td>Pending</td>
+
+<td>
+
+<button class="approve-btn">
+
+Approve
+
+</button>
+
+<button class="reject-btn">
+
+Reject
+
+</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Uploaded Proof Documents
+
+</h2>
+
+</div>
+
+<div class="card-container">
+
+<div class="info-card">
+
+<h3>
+
+Sarah Johnson
+
+</h3>
+
+<p>
+
+Passport Verification
+
+</p>
+
+<span>
+
+Approved
+
+</span>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+David Lee
+
+</h3>
+
+<p>
+
+Bank Statement
+
+</p>
+
+<span>
+
+Pending Review
+
+</span>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+Emma Brown
+
+</h3>
+
+<p>
+
+Driving License
+
+</p>
+
+<span>
+
+Approved
+
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Payment History -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Payment History
+
+</h2>
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Winner</th>
+
+<th>Prize Amount</th>
+
+<th>Transaction ID</th>
+
+<th>Status</th>
+
+<th>Date</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Sarah Johnson</td>
+
+<td>$5,000</td>
+
+<td>TXN45012</td>
+
+<td>Completed</td>
+
+<td>20 Jun 2026</td>
+
+</tr>
+
+<tr>
+
+<td>Emma Brown</td>
+
+<td>$25,000</td>
+
+<td>TXN45085</td>
+
+<td>Completed</td>
+
+<td>15 Jun 2026</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Top Prize Winners -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Top Prize Winners
+
+</h2>
+
+</div>
+
+<div class="card-container">
+
+<div class="info-card">
+
+<h3>
+
+Emma Brown
+
+</h3>
+
+<p>
+
+Mega Draw Winner
+
+</p>
+
+<span>
+
+$25,000
+
+</span>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+David Lee
+
+</h3>
+
+<p>
+
+VIP Draw Winner
+
+</p>
+
+<span>
+
+$10,000
+
+</span>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+Sarah Johnson
+
+</h3>
+
+<p>
+
+Weekly Draw Winner
+
+</p>
+
+<span>
+
+$5,000
+
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Activity Timeline -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Recent Activities
+
+</h2>
+
+</div>
+
+<div class="activity-container">
+
+<div class="activity-card">
+
+🏆 Sarah Johnson marked as paid.
+
+</div>
+
+<div class="activity-card">
+
+📄 David Lee submitted verification document.
+
+</div>
+
+<div class="activity-card">
+
+✅ Emma Brown verification approved.
+
+</div>
+
+<div class="activity-card">
+
+💰 Prize payment completed successfully.
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Monthly Analytics -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Monthly Winner Analytics
+
+</h2>
+
+</div>
+
+<div class="card-container">
+
+<div class="info-card">
+
+<h3>
+
+June Winners
+
+</h3>
+
+<p>
+
+35 Winners
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+Prize Distributed
+
+</h3>
+
+<p>
+
+$120,000
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+Pending Payments
+
+</h3>
+
+<p>
+
+12 Cases
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="dashboard-section">
+
+<div class="section-title">
+<h2>Pending Payouts</h2>
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+<tr>
+<th>Winner</th>
+<th>Prize Amount</th>
+<th>Bank</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>David Lee</td>
+<td>$10,000</td>
+<td>ABC Bank</td>
+<td>Pending</td>
+<td>
+<button class="paid-btn">Mark Paid</button>
+</td>
+</tr>
+
+<tr>
+<td>Alex Carter</td>
+<td>$7,500</td>
+<td>XYZ Bank</td>
+<td>Pending</td>
+<td>
+<button class="paid-btn">Mark Paid</button>
+</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+<!-- Rejected Winners -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+<h2>Rejected Winners</h2>
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+<tr>
+<th>Winner</th>
+<th>Reason</th>
+<th>Date</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>Michael Smith</td>
+<td>Invalid Documents</td>
+<td>12 Jun 2026</td>
+</tr>
+
+<tr>
+<td>John Walker</td>
+<td>Duplicate Entry</td>
+<td>10 Jun 2026</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+<!-- Fraud Alerts -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+<h2>Fraud Alerts</h2>
+</div>
+
+<div class="activity-container">
+
+<div class="activity-card">
+⚠️ Duplicate account detected.
+</div>
+
+<div class="activity-card">
+⚠️ Suspicious verification attempt found.
+</div>
+
+<div class="activity-card">
+⚠️ Invalid bank information submitted.
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- Support Requests -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+<h2>Winner Support Requests</h2>
+</div>
+
+<div class="activity-container">
+
+<div class="activity-card">
+📩 Sarah Johnson requested payout details.
+</div>
+
+<div class="activity-card">
+📩 David Lee requested verification update.
+</div>
+
+<div class="activity-card">
+📩 Emma Brown requested transaction receipt.
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- Footer -->
+
+<footer>
+
+<p>
+© 2026 CharityWin Winner Management | All Rights Reserved
+</p>
+
+</footer>
+
+</div>
+
+<script src="winner.js"></script>
+
+</body>
+</html>

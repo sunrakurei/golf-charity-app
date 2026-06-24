@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Charity Management | CharityWin</title>
+
+<link rel="stylesheet" href="charity management.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Header -->
+
+<header>
+
+<div class="header-left">
+
+<h1>
+
+Charity Management
+
+</h1>
+
+<p>
+
+Manage charities, donations and approvals.
+
+</p>
+
+</div>
+
+<button class="add-charity-btn">
+
+<i class="fa-solid fa-plus"></i>
+
+Add Charity
+
+</button>
+
+</header>
+
+
+
+<!-- Search & Filters -->
+
+<section class="controls">
+
+<div class="search-box">
+
+<input type="text"
+placeholder="Search charity...">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+</div>
+
+<select>
+
+<option>All Categories</option>
+
+<option>Education</option>
+
+<option>Healthcare</option>
+
+<option>Children</option>
+
+<option>Food Support</option>
+
+</select>
+
+<select>
+
+<option>All Status</option>
+
+<option>Active</option>
+
+<option>Pending</option>
+
+<option>Suspended</option>
+
+</select>
+
+</section>
+
+
+
+<!-- Statistics -->
+
+<section class="stats">
+
+<div class="stat-card">
+
+<i class="fa-solid fa-hand-holding-heart"></i>
+
+<h2>85</h2>
+
+<p>Total Charities</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h2>70</h2>
+
+<p>Active Charities</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-clock"></i>
+
+<h2>10</h2>
+
+<p>Pending Approvals</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-ban"></i>
+
+<h2>5</h2>
+
+<p>Suspended Charities</p>
+
+</div>
+
+</section>
+
+
+
+<!-- Quick Actions -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Quick Actions
+
+</h2>
+
+</div>
+
+<div class="quick-actions">
+
+<button>
+
+➕ Add Charity
+
+</button>
+
+<button>
+
+✅ Approve Charity
+
+</button>
+
+<button>
+
+✏️ Edit Charity
+
+</button>
+
+<button>
+
+📤 Export Report
+
+</button>
+
+</div>
+
+</section>
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+All Charities
+
+</h2>
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+<th>Charity Name</th>
+<th>Category</th>
+<th>Donations</th>
+<th>Beneficiaries</th>
+<th>Status</th>
+<th>Actions</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>CH001</td>
+<td>Hope Foundation</td>
+<td>Education</td>
+<td>$45,000</td>
+<td>1200</td>
+<td><span class="active-status">Active</span></td>
+
+<td>
+
+<button class="view-btn">
+
+View
+
+</button>
+
+<button class="edit-btn">
+
+Edit
+
+</button>
+
+<button class="delete-btn">
+
+Delete
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>CH002</td>
+<td>Health Support</td>
+<td>Healthcare</td>
+<td>$72,000</td>
+<td>950</td>
+<td><span class="pending-status">Pending</span></td>
+
+<td>
+
+<button class="view-btn">
+
+View
+
+</button>
+
+<button class="edit-btn">
+
+Edit</button>
+
+<button class="delete-btn">
+
+Delete
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>CH003</td>
+<td>Food Care</td>
+<td>Food Support</td>
+<td>$31,000</td>
+<td>850</td>
+<td><span class="active-status">Active</span></td>
+
+<td>
+
+<button class="view-btn">
+
+View
+
+</button>
+
+<button class="edit-btn">
+
+Edit
+
+</button>
+
+<button class="delete-btn">
+
+Delete
+
+</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ================= TOP CHARITIES ================= -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Top Charities
+
+</h2>
+
+</div>
+
+<div class="card-container">
+
+<div class="info-card">
+
+<h3>
+
+Hope Foundation
+
+</h3>
+
+<p>
+
+Education Support
+
+</p>
+
+<span>
+
+$45,000 Raised
+
+</span>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+Health Support
+
+</h3>
+
+<p>
+
+Healthcare Program
+
+</p>
+
+<span>
+
+$72,000 Raised
+
+</span>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+Food Care
+
+</h3>
+
+<p>
+
+Food Distribution
+
+</p>
+
+<span>
+
+$31,000 Raised
+
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ================= RECENT DONATIONS ================= -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Recent Donations
+
+</h2>
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Donor</th>
+<th>Charity</th>
+<th>Amount</th>
+<th>Date</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Sarah Johnson</td>
+<td>Hope Foundation</td>
+<td>$500</td>
+<td>20 Jun 2026</td>
+
+</tr>
+
+<tr>
+
+<td>David Lee</td>
+<td>Health Support</td>
+<td>$1000</td>
+<td>18 Jun 2026</td>
+
+</tr>
+
+<tr>
+
+<td>Emma Brown</td>
+<td>Food Care</td>
+<td>$700</td>
+<td>15 Jun 2026</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ================= PAGINATION ================= -->
+
+<section class="pagination-section">
+
+<div class="pagination">
+
+<button>
+
+Previous
+
+</button>
+
+<button class="current-page">
+
+1
+
+</button>
+
+<button>
+
+2
+
+</button>
+
+<button>
+
+3
+
+</button>
+
+<button>
+
+Next
+
+</button>
+
+</div>
+
+</section>
+
+<section class="dashboard-section">
+
+<div class="section-title">
+<h2>Donation History</h2>
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Transaction ID</th>
+<th>Donor</th>
+<th>Charity</th>
+<th>Amount</th>
+<th>Date</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>TXN001</td>
+<td>Sarah Johnson</td>
+<td>Hope Foundation</td>
+<td>$500</td>
+<td>20 Jun 2026</td>
+</tr>
+
+<tr>
+<td>TXN002</td>
+<td>David Lee</td>
+<td>Health Support</td>
+<td>$1,000</td>
+<td>18 Jun 2026</td>
+</tr>
+
+<tr>
+<td>TXN003</td>
+<td>Emma Brown</td>
+<td>Food Care</td>
+<td>$700</td>
+<td>15 Jun 2026</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= PENDING APPROVALS ================= -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+<h2>Pending Charity Approvals</h2>
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+<th>ID</th>
+<th>Charity Name</th>
+<th>Category</th>
+<th>Status</th>
+<th>Actions</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>CH009</td>
+<td>Care For Kids</td>
+<td>Children</td>
+<td><span class="pending-status">Pending</span></td>
+
+<td>
+
+<button class="approve-btn">
+
+Approve
+
+</button>
+
+<button class="reject-btn">
+
+Reject
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>CH010</td>
+<td>Future Education</td>
+<td>Education</td>
+<td><span class="pending-status">Pending</span></td>
+
+<td>
+
+<button class="approve-btn">
+
+Approve
+
+</button>
+
+<button class="reject-btn">
+
+Reject
+
+</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= TOP DONORS ================= -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Top Donors
+
+</h2>
+
+</div>
+
+<div class="card-container">
+
+<div class="info-card">
+
+<h3>Sarah Johnson</h3>
+
+<p>Total Donations</p>
+
+<span>$12,500</span>
+
+</div>
+
+<div class="info-card">
+
+<h3>David Lee</h3>
+
+<p>Total Donations</p>
+
+<span>$10,000</span>
+
+</div>
+
+<div class="info-card">
+
+<h3>Emma Brown</h3>
+
+<p>Total Donations</p>
+
+<span>$8,200</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= MONTHLY ANALYTICS ================= -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Monthly Analytics
+
+</h2>
+
+</div>
+
+<div class="card-container">
+
+<div class="info-card">
+
+<h3>June Donations</h3>
+
+<p>$185,000 Raised</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Beneficiaries</h3>
+
+<p>5,800 People Helped</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>New Charities</h3>
+
+<p>8 Added</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= ACTIVITY TIMELINE ================= -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Recent Activities
+
+</h2>
+
+</div>
+
+<div class="activity-container">
+
+<div class="activity-card">
+
+💙 Hope Foundation received $500 donation.
+
+</div>
+
+<div class="activity-card">
+
+✅ Health Support charity approved.
+
+</div>
+
+<div class="activity-card">
+
+📈 Monthly donation target achieved.
+
+</div>
+
+<div class="activity-card">
+
+🎉 New charity added successfully.
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= DISTRIBUTION SUMMARY ================= -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Fund Distribution Summary
+
+</h2>
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Category</th>
+<th>Total Donations</th>
+<th>Beneficiaries</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Education</td>
+<td>$80,000</td>
+<td>2,000</td>
+</tr>
+
+<tr>
+<td>Healthcare</td>
+<td>$60,000</td>
+<td>1,500</td>
+</tr>
+
+<tr>
+<td>Food Support</td>
+<td>$45,000</td>
+<td>2,300</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Suspended Charities
+
+</h2>
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+<th>Charity Name</th>
+<th>Reason</th>
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>CH021</td>
+<td>Helping Hands</td>
+<td>Document Verification Pending</td>
+<td>Suspended</td>
+
+</tr>
+
+<tr>
+
+<td>CH022</td>
+<td>Bright Future</td>
+<td>Policy Violation</td>
+<td>Suspended</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= FRAUD ALERTS ================= -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Fraud Alerts
+
+</h2>
+
+</div>
+
+<div class="activity-container">
+
+<div class="activity-card">
+
+⚠️ Duplicate registration attempt detected.
+
+</div>
+
+<div class="activity-card">
+
+⚠️ Suspicious donation activity identified.
+
+</div>
+
+<div class="activity-card">
+
+⚠️ Verification documents require review.
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= REPORTS ================= -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Reports & Export
+
+</h2>
+
+</div>
+
+<div class="quick-actions">
+
+<button>
+
+📄 Export Charity Report
+
+</button>
+
+<button>
+
+📊 Donation Analytics
+
+</button>
+
+<button>
+
+⬇️ Download CSV
+
+</button>
+
+<button>
+
+📧 Email Report
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= SUPPORT REQUESTS ================= -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Support Requests
+
+</h2>
+
+</div>
+
+<div class="activity-container">
+
+<div class="activity-card">
+
+📩 Charity requested account verification.
+
+</div>
+
+<div class="activity-card">
+
+📩 Donation dispute raised by donor.
+
+</div>
+
+<div class="activity-card">
+
+📩 Charity profile update request received.
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<p>
+
+© 2026 CharityWin Charity Management | All Rights Reserved
+
+</p>
+
+</footer>
+
+</div>
+
+<script src="charity management.js"></script>
+
+</body>
+</html>

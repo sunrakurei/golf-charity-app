@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Draw Management | CharityWin</title>
+
+<link rel="stylesheet" href="draw.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<!-- Header -->
+
+<header>
+
+<div class="header-left">
+
+<h1>Draw Management</h1>
+
+<p>
+Create, manage and publish draw results.
+</p>
+
+</div>
+
+<button class="create-draw-btn">
+
+<i class="fa-solid fa-plus"></i>
+
+Create Draw
+
+</button>
+
+</header>
+
+
+
+<!-- Search + Filters -->
+
+<section class="controls">
+
+<div class="search-box">
+
+<input type="text"
+placeholder="Search draw...">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+</div>
+
+<select>
+
+<option>All Draw Types</option>
+
+<option>Weekly Draw</option>
+
+<option>VIP Draw</option>
+
+<option>Mega Draw</option>
+
+</select>
+
+<select>
+
+<option>All Status</option>
+
+<option>Upcoming</option>
+
+<option>Running</option>
+
+<option>Completed</option>
+
+<option>Cancelled</option>
+
+</select>
+
+</section>
+
+
+
+<!-- Statistics -->
+
+<section class="stats">
+
+<div class="stat-card">
+
+<i class="fa-solid fa-ticket"></i>
+
+<h2>150</h2>
+
+<p>Total Draws</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-clock"></i>
+
+<h2>18</h2>
+
+<p>Upcoming Draws</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-play"></i>
+
+<h2>5</h2>
+
+<p>Running Draws</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h2>127</h2>
+
+<p>Completed Draws</p>
+
+</div>
+
+</section>
+
+
+
+<!-- Quick Actions -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>Quick Actions</h2>
+
+</div>
+
+<div class="quick-actions">
+
+<button>
+<i class="fa-solid fa-plus"></i>
+Create Draw
+</button>
+
+<button>
+<i class="fa-solid fa-play"></i>
+Run Simulation
+</button>
+
+<button>
+<i class="fa-solid fa-bullhorn"></i>
+Publish Results
+</button>
+
+<button>
+<i class="fa-solid fa-download"></i>
+Export Data
+</button>
+
+</div>
+
+</section>
+
+<section class="dashboard-section">
+
+<div class="section-title">
+<h2>All Draws</h2>
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+<th>ID</th>
+<th>Draw Name</th>
+<th>Type</th>
+<th>Participants</th>
+<th>Prize Pool</th>
+<th>Draw Date</th>
+<th>Status</th>
+<th>Actions</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>DR001</td>
+<td>Weekly Lucky Draw</td>
+<td>Weekly</td>
+<td>5,420</td>
+<td>$10,000</td>
+<td>25 Jun 2026</td>
+<td><span class="upcoming-status">Upcoming</span></td>
+<td>
+
+<button class="view-btn">View</button>
+
+<button class="edit-btn">Edit</button>
+
+<button class="run-btn">Run</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>DR002</td>
+
+<td>VIP Draw</td>
+
+<td>VIP</td>
+
+<td>1,250</td>
+
+<td>$50,000</td>
+
+<td>20 Jun 2026</td>
+
+<td><span class="running-status">Running</span></td>
+
+<td>
+
+<button class="view-btn">View</button>
+
+<button class="publish-btn">Publish</button>
+
+<button class="cancel-btn">Cancel</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>DR003</td>
+
+<td>Mega Jackpot Draw</td>
+
+<td>Mega</td>
+
+<td>8,700</td>
+
+<td>$100,000</td>
+
+<td>15 Jun 2026</td>
+
+<td><span class="completed-status">Completed</span></td>
+
+<td>
+
+<button class="view-btn">View</button>
+
+<button class="publish-btn">Results</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= UPCOMING DRAWS ================= -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>Upcoming Draws</h2>
+
+</div>
+
+<div class="card-container">
+
+<div class="info-card">
+
+<h3>Weekly Draw</h3>
+
+<p>Date : 25 Jun 2026</p>
+
+<span>$10,000 Prize Pool</span>
+
+</div>
+
+<div class="info-card">
+
+<h3>VIP Draw</h3>
+
+<p>Date : 28 Jun 2026</p>
+
+<span>$50,000 Prize Pool</span>
+
+</div>
+
+<div class="info-card">
+
+<h3>Mega Draw</h3>
+
+<p>Date : 30 Jun 2026</p>
+
+<span>$100,000 Prize Pool</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= PAGINATION ================= -->
+
+<section class="pagination-section">
+
+<div class="pagination">
+
+<button>Previous</button>
+
+<button class="current-page">1</button>
+
+<button>2</button>
+
+<button>3</button>
+
+<button>Next</button>
+
+</div>
+
+</section>
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Running Draws
+
+</h2>
+
+</div>
+
+<div class="card-container">
+
+<div class="info-card">
+
+<h3>
+
+VIP Draw
+
+</h3>
+
+<p>
+
+Participants : 1,250
+
+</p>
+
+<span>
+
+Live Now
+
+</span>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+Premium Weekly Draw
+
+</h3>
+
+<p>
+
+Participants : 4,800
+
+</p>
+
+<span>
+
+Live Now
+
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ================= RECENT DRAW RESULTS ================= -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Recent Draw Results
+
+</h2>
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Draw</th>
+
+<th>Winner</th>
+
+<th>Prize</th>
+
+<th>Date</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Mega Draw</td>
+
+<td>Emma Brown</td>
+
+<td>$100,000</td>
+
+<td>15 Jun 2026</td>
+
+</tr>
+
+<tr>
+
+<td>VIP Draw</td>
+
+<td>David Lee</td>
+
+<td>$50,000</td>
+
+<td>12 Jun 2026</td>
+
+</tr>
+
+<tr>
+
+<td>Weekly Draw</td>
+
+<td>Sarah Johnson</td>
+
+<td>$10,000</td>
+
+<td>10 Jun 2026</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ================= TOP WINNERS ================= -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Top Winners
+
+</h2>
+
+</div>
+
+<div class="card-container">
+
+<div class="info-card">
+
+<h3>
+
+Emma Brown
+
+</h3>
+
+<p>
+
+Mega Draw Winner
+
+</p>
+
+<span>
+
+$100,000
+
+</span>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+David Lee
+
+</h3>
+
+<p>
+
+VIP Draw Winner
+
+</p>
+
+<span>
+
+$50,000
+
+</span>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+Sarah Johnson
+
+</h3>
+
+<p>
+
+Weekly Draw Winner
+
+</p>
+
+<span>
+
+$10,000
+
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ================= ACTIVITY TIMELINE ================= -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Recent Activities
+
+</h2>
+
+</div>
+
+<div class="activity-container">
+
+<div class="activity-card">
+
+🎯 Weekly Draw created successfully.
+
+</div>
+
+<div class="activity-card">
+
+▶️ VIP Draw simulation started.
+
+</div>
+
+<div class="activity-card">
+
+🏆 Mega Draw results published.
+
+</div>
+
+<div class="activity-card">
+
+📢 Winner notification sent.
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ================= MONTHLY ANALYTICS ================= -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Monthly Analytics
+
+</h2>
+
+</div>
+
+<div class="card-container">
+
+<div class="info-card">
+
+<h3>
+
+June Draws
+
+</h3>
+
+<p>
+
+35 Draws Conducted
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+Participants
+
+</h3>
+
+<p>
+
+45,800 Users
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+
+Prize Distribution
+
+</h3>
+
+<p>
+
+$650,000 Distributed
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ================= PRIZE DISTRIBUTION ================= -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Prize Distribution Summary
+
+</h2>
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Draw Type</th>
+
+<th>Prize Pool</th>
+
+<th>Winners</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Weekly Draw</td>
+
+<td>$100,000</td>
+
+<td>15</td>
+
+</tr>
+
+<tr>
+
+<td>VIP Draw</td>
+
+<td>$250,000</td>
+
+<td>8</td>
+
+</tr>
+
+<tr>
+
+<td>Mega Draw</td>
+
+<td>$300,000</td>
+
+<td>3</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Draw History
+
+</h2>
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Draw ID</th>
+<th>Draw Name</th>
+<th>Date</th>
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>DR001</td>
+<td>Weekly Draw</td>
+<td>10 Jun 2026</td>
+<td>Completed</td>
+
+</tr>
+
+<tr>
+
+<td>DR002</td>
+<td>VIP Draw</td>
+<td>15 Jun 2026</td>
+<td>Completed</td>
+
+</tr>
+
+<tr>
+
+<td>DR003</td>
+<td>Mega Draw</td>
+<td>20 Jun 2026</td>
+<td>Completed</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ================= CANCELLED DRAWS ================= -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Cancelled Draws
+
+</h2>
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Draw</th>
+<th>Reason</th>
+<th>Date</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>VIP Draw</td>
+<td>Technical Issue</td>
+<td>5 Jun 2026</td>
+
+</tr>
+
+<tr>
+
+<td>Special Draw</td>
+<td>Low Participation</td>
+<td>1 Jun 2026</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ================= FRAUD ALERTS ================= -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Fraud Alerts
+
+</h2>
+
+</div>
+
+<div class="activity-container">
+
+<div class="activity-card">
+
+⚠️ Duplicate ticket entries detected.
+
+</div>
+
+<div class="activity-card">
+
+⚠️ Suspicious activity found in VIP Draw.
+
+</div>
+
+<div class="activity-card">
+
+⚠️ Fake participation attempts blocked.
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ================= REPORTS ================= -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Reports & Export
+
+</h2>
+
+</div>
+
+<div class="quick-actions">
+
+<button>
+
+📄 Export Draw Report
+
+</button>
+
+<button>
+
+📊 Monthly Analytics
+
+</button>
+
+<button>
+
+⬇️ Download CSV
+
+</button>
+
+<button>
+
+📧 Email Reports
+
+</button>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ================= SUPPORT REQUESTS ================= -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Support Requests
+
+</h2>
+
+</div>
+
+<div class="activity-container">
+
+<div class="activity-card">
+
+📩 User requested draw result clarification.
+
+</div>
+
+<div class="activity-card">
+
+📩 Participant requested refund information.
+
+</div>
+
+<div class="activity-card">
+
+📩 Draw schedule update request received.
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<p>
+
+© 2026 CharityWin Draw Management | All Rights Reserved
+
+</p>
+
+</footer>
+
+</div>
+
+<script src="draw.js"></script>
+
+</body>
+</html>

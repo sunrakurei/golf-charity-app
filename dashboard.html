@@ -1,0 +1,874 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard | CharityWin</title>
+
+<link rel="stylesheet" href="dashboard.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<div class="logo">
+
+<h2>CharityWin</h2>
+
+</div>
+
+<ul>
+
+    <ul>
+
+<li class="active">
+<a href="dashboard.html">
+<i class="fa-solid fa-house"></i>
+Dashboard
+</a>
+</li>
+
+
+<li>
+<a href="score management.html">
+<i class="fa-solid fa-chart-line"></i>
+Score Management
+</a>
+</li>
+
+
+<li>
+<a href="charity selection.html">
+<i class="fa-solid fa-heart"></i>
+Charity Selection
+</a>
+</li>
+
+
+<li>
+<a href="draw.html">
+<i class="fa-solid fa-ticket"></i>
+Draw History
+</a>
+</li>
+
+
+<li>
+<a href="winner.html">
+<i class="fa-solid fa-trophy"></i>
+Winnings
+</a>
+</li>
+
+
+<li>
+<a href="winner verfication.html">
+<i class="fa-solid fa-circle-check"></i>
+Winner Verification
+</a>
+</li>
+
+
+<li>
+<a href="profile.html">
+<i class="fa-solid fa-user"></i>
+Profile
+</a>
+</li>
+
+
+<li>
+<a href="subscription.html">
+<i class="fa-solid fa-crown"></i>
+Subscription
+</a>
+</li>
+
+</ul>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+<!-- Main Content -->
+
+<div class="main-content">
+
+<header>
+
+<div class="search-box">
+
+<input
+type="text"
+placeholder="Search">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+</div>
+
+<div class="header-right">
+
+<div class="notification">
+
+<i class="fa-solid fa-bell"></i>
+
+<span>3</span>
+
+</div>
+
+<div class="profile">
+
+<img src="images/user.jpg">
+
+<div>
+
+<h4>Sarah Wilson</h4>
+
+<p>Gold Member</p>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+
+Welcome Back, Sarah 👋
+
+</h1>
+
+<p>
+
+Track your scores, winnings, draw participation and charity contributions.
+
+</p>
+
+<div class="hero-buttons">
+
+<button>
+
+Join Upcoming Draw
+
+</button>
+
+<button>
+
+View Winnings
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="stats">
+
+<div class="stat-card">
+
+<i class="fa-solid fa-wallet"></i>
+
+<h2>$12,540</h2>
+
+<p>Total Winnings</p>
+
+</div>
+
+
+
+<div class="stat-card">
+
+<i class="fa-solid fa-ticket"></i>
+
+<h2>158</h2>
+
+<p>Draw Entries</p>
+
+</div>
+
+
+
+<div class="stat-card">
+
+<i class="fa-solid fa-heart"></i>
+
+<h2>$2,340</h2>
+
+<p>Donated Amount</p>
+
+</div>
+
+
+
+<div class="stat-card">
+
+<i class="fa-solid fa-crown"></i>
+
+<h2>Active</h2>
+
+<p>Subscription Status</p>
+
+</div>
+
+</section>
+<!-- Current Subscription -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Current Subscription
+
+</h2>
+
+<a href="#">Manage Subscription</a>
+
+</div>
+
+<div class="subscription-card">
+
+<div class="subscription-left">
+
+<h3>
+
+Gold Membership
+
+</h3>
+
+<p>
+
+Your subscription is currently active and will renew automatically.
+
+</p>
+
+<div class="subscription-info">
+
+<div>
+
+<h4>Plan</h4>
+
+<span>Gold Plan</span>
+
+</div>
+
+<div>
+
+<h4>Renewal Date</h4>
+
+<span>15 August 2025</span>
+
+</div>
+
+<div>
+
+<h4>Status</h4>
+
+<span class="active-status">
+
+Active
+
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+<button class="renew-btn">
+
+Renew Now
+
+</button>
+
+</div>
+
+</section>
+
+
+
+
+<!-- Quick Actions -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+ <h2>
+
+Quick Actions
+
+</h2>
+
+</div>
+
+<div class="quick-actions">
+
+<div class="action-card">
+
+<i class="fa-solid fa-plus"></i>
+
+<h3>
+
+Add Scores
+
+</h3>
+
+<p>
+
+Update your latest scores.
+
+</p>
+
+</div>
+
+
+<div class="action-card">
+
+<i class="fa-solid fa-heart"></i>
+
+<h3>
+
+Select Charity
+
+</h3>
+
+<p>
+
+Choose charities to support.
+
+</p>
+
+</div>
+
+
+<div class="action-card">
+
+<i class="fa-solid fa-ticket"></i>
+
+<h3>
+
+Join Draw
+
+</h3>
+
+<p>
+
+Participate in upcoming draws.
+
+</p>
+
+</div>
+
+
+<div class="action-card">
+
+<i class="fa-solid fa-trophy"></i>
+
+<h3>
+
+View Winnings
+
+</h3>
+
+<p>
+
+Check payment status and rewards.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- Recent Activities -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Recent Activities
+
+</h2>
+
+<a href="#">
+
+View All
+
+</a>
+
+</div>
+
+<div class="activity-container">
+
+<div class="activity-item">
+
+<div class="activity-icon">
+
+<i class="fa-solid fa-ticket"></i>
+
+</div>
+
+<div>
+
+<h4>
+
+Joined Monthly Draw
+
+</h4>
+
+<p>
+
+Today • 10:30 AM
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="activity-item">
+
+<div class="activity-icon">
+
+<i class="fa-solid fa-heart"></i>
+
+</div>
+
+<div>
+
+<h4>
+
+Donated $50 To Education Charity
+
+</h4>
+
+<p>
+
+Yesterday • 5:20 PM
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="activity-item">
+
+<div class="activity-icon">
+
+<i class="fa-solid fa-trophy"></i>
+
+</div>
+
+<div>
+
+<h4>
+
+Won $500 Prize
+
+</h4>
+
+<p>
+
+2 Days Ago
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="activity-item">
+
+<div class="activity-icon">
+
+<i class="fa-solid fa-crown"></i>
+
+</div>
+
+<div>
+
+<h4>
+
+Gold Membership Renewed
+
+</h4>
+
+<p>
+
+4 Days Ago
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- Upcoming Draws -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Upcoming Draws
+
+</h2>
+
+<a href="#">
+
+View All
+
+</a>
+
+</div>
+
+<div class="draw-table">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Draw Name</th>
+<th>Date</th>
+<th>Prize Pool</th>
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Monthly Mega Draw</td>
+
+<td>15 March 2026</td>
+
+<td>$10,000</td>
+
+<td>
+
+<span class="live">
+
+Upcoming
+
+</span>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Charity Lucky Draw</td>
+
+<td>28 March 2026</td>
+
+<td>$5,000</td>
+
+<td>
+
+<span class="live">
+
+Upcoming
+
+</span>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Gold Members Draw</td>
+
+<td>5 March 2026</td>
+
+<td>$20,000</td>
+
+<td>
+
+<span class="live">
+
+Upcoming
+
+</span>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+<!-- Winnings Summary -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Winnings Summary
+
+</h2>
+
+</div>
+
+<div class="winning-cards">
+
+<div class="winning-card">
+
+<h3>$500</h3>
+
+<p>
+
+Last Prize Won
+
+</p>
+
+</div>
+
+<div class="winning-card">
+
+<h3>$12,540</h3>
+
+<p>
+
+Total Earnings
+
+</p>
+
+</div>
+
+<div class="winning-card">
+
+<h3>8</h3>
+
+<p>
+
+Total Wins
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- Charity Impact -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Charity Impact
+
+</h2>
+
+</div>
+
+<div class="impact-container">
+
+<div class="impact-card">
+
+<h3>1250+</h3>
+
+<p>
+
+Children Educated
+
+</p>
+
+</div>
+
+<div class="impact-card">
+
+<h3>8500+</h3>
+
+<p>
+
+Meals Provided
+
+</p>
+
+</div>
+
+<div class="impact-card">
+
+<h3>5200+</h3>
+
+<p>
+
+Trees Planted
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- Notifications -->
+
+<section class="dashboard-section">
+
+<div class="section-title">
+
+<h2>
+
+Latest Notifications
+
+</h2>
+
+</div>
+
+<div class="notification-box">
+
+<div>
+
+<i class="fa-solid fa-bell"></i>
+
+Draw Results Published Successfully
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-credit-card"></i>
+
+Subscription Renewal Due In 5 Days
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-heart"></i>
+
+New Charity Added To Platform
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- Footer -->
+
+<footer>
+
+<div class="footer-links">
+
+<a href="#">
+
+About Us
+
+</a>
+
+<a href="#">
+
+Privacy Policy
+
+</a>
+
+<a href="#">
+
+Terms & Conditions
+
+</a>
+
+<a href="#">
+
+Support
+
+</a>
+
+<a href="#">
+
+Contact
+
+</a>
+
+</div>
+
+<p>
+
+© 2026 CharityWin. All Rights Reserved.
+
+</p>
+
+</footer>
+
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>
+
+

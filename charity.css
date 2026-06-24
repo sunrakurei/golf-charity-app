@@ -1,0 +1,364 @@
+:root{
+    --primary:#facc15;
+    --secondary:#22c55e;
+    --dark:#0f172a;
+    --card:#1e293b;
+    --text:#e2e8f0;
+    --white:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:var(--dark);
+    color:var(--text);
+    line-height:1.7;
+}
+
+/* NAVBAR */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(15,23,42,.95);
+    position:sticky;
+    top:0;
+    z-index:1000;
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.logo{
+    font-size:1.7rem;
+    font-weight:bold;
+    color:var(--primary);
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.navbar a:hover{
+    color:var(--primary);
+}
+
+/* HERO */
+
+.charity-hero{
+    min-height:75vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 10%;
+    background:
+    linear-gradient(rgba(0,0,0,.65),
+    rgba(0,0,0,.65)),
+    url("https://images.unsplash.com/photo-1469571486292-b53601020f6f?w=1600");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    color:var(--primary);
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    max-width:800px;
+    margin:auto;
+    font-size:1.1rem;
+}
+
+/* SEARCH */
+
+.search-section{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.search-section h2{
+    color:var(--primary);
+    margin-bottom:25px;
+}
+
+.search-section input{
+    width:100%;
+    max-width:650px;
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    margin-bottom:25px;
+    outline:none;
+}
+
+.filters{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.filters button{
+    padding:12px 22px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    background:var(--card);
+    color:white;
+    transition:.3s;
+}
+
+.filters button:hover{
+    background:var(--primary);
+    color:black;
+}
+
+/* ================= CHARITY GRID ================= */
+
+.charity-grid{
+    padding:40px 8%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.charity-card{
+    background:var(--card);
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.charity-card:hover{
+    transform:translateY(-10px);
+}
+
+.charity-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.content{
+    padding:25px;
+}
+
+.content span{
+    color:var(--secondary);
+    font-weight:bold;
+}
+
+.content h3{
+    margin:12px 0;
+    color:white;
+}
+
+.content button{
+    margin-top:15px;
+    padding:12px 22px;
+    border:none;
+    border-radius:25px;
+    background:var(--primary);
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* ================= IMPACT FIXED ================= */
+
+.impact-section{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.impact-section h2{
+    color:var(--primary);
+    margin-bottom:15px;
+    font-size:2.5rem;
+}
+
+.impact-intro{
+    max-width:900px;
+    margin:0 auto 40px;
+    opacity:0.9;
+}
+
+/* FIX: GRID NOW WORKS PROPERLY */
+.impact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.impact-grid div{
+    background:var(--card);
+    padding:25px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.impact-grid div:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px rgba(250,204,21,.2);
+}
+
+.impact-grid h3{
+    color:var(--secondary);
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+/* ================= STORIES ================= */
+
+.stories{
+    padding:90px 8%;
+    text-align:center;
+}
+
+.stories h2{
+    color:var(--primary);
+    margin-bottom:40px;
+}
+
+.story-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.story-card{
+    background:var(--card);
+    padding:30px;
+    border-radius:20px;
+}
+
+/* ================= WHY FIXED ================= */
+
+.why-section{
+    padding:90px 8%;
+    text-align:center;
+}
+
+.why-section h2{
+    color:var(--primary);
+    margin-bottom:40px;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.why-grid div{
+    background:var(--card);
+    padding:30px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.why-grid div:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px rgba(250,204,21,.2);
+}
+
+.why-grid i{
+    color:var(--primary);
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+/* CTA */
+
+.cta{
+    text-align:center;
+    padding:100px 8%;
+    background:linear-gradient(135deg,var(--primary),#eab308);
+    color:black;
+}
+
+.cta button{
+    margin-top:20px;
+    padding:14px 30px;
+    border:none;
+    border-radius:30px;
+    background:black;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#08101f;
+}
+
+/* MODAL */
+
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.7);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.modal-content{
+    background:white;
+    color:black;
+    width:90%;
+    max-width:600px;
+    padding:30px;
+    border-radius:15px;
+    position:relative;
+}
+
+.close{
+    position:absolute;
+    right:20px;
+    top:15px;
+    font-size:30px;
+    cursor:pointer;
+}
+
+/* RESPONSIVE FIX */
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:2.6rem;
+}
+
+.navbar{
+    flex-direction:column;
+    gap:15px;
+}
+
+.navbar ul{
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+}
