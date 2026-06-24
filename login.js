@@ -64,7 +64,7 @@ if (response.ok) {
 
   alert("Welcome Back To CharityWin ❤️");
 
-  window.location.href = "home.html";
+  window.location.href = "index.html";
 
 } else {
 
